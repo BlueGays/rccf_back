@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>查看</title>
-    <link href="css/bootstrap-combined.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/list.css"/>
+    <title>信贷</title>
+    <link href="../css/bootstrap-combined.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/list.css"/>
 </head>
 <body>
-<div class="to-right">
-    <input  class="add-button smallwidth" type="button" value="编辑"/>
-    <input  class="add-button gray-button smallwidth" type="button" value="返回"/>
-</div>
 <div class="container-fluid">
     <div class="row-fluid product-type">
         <div class="span2">
@@ -29,13 +25,13 @@
         <label>产品编号</label>
     </div>
     <div class="span4">
-        <input class="bigwidth" type="text" readonly/>
+        <input class="bigwidth" type="text"/>
     </div>
     <div class="span2">
         <label>银行名称</label>
     </div>
     <div class="span4">
-        <input class="bigwidth" type="text" readonly/>
+        <input class="bigwidth" type="text"/>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -86,7 +82,7 @@
         <input class="" name="loan-style" type="checkbox"/>信用积分贷
         <input class="" name="loan-style" type="checkbox"/>助学贷
         <input class="" name="loan-style" type="checkbox"/>其他
-        <input class="smallwidth" name="loan-style" type="text" readonly/>万
+        <input class="smallwidth" name="loan-style" type="text"/>万
 
     </div>
 </div>
@@ -108,7 +104,7 @@
         <input class="" name="repayment" type="checkbox"/>先息后本
         <input class="" name="repayment" type="checkbox"/>等额本息
         <input class="" name="repayment" type="checkbox"/>其他
-        <input class="smallwidth" name="repayment" type="text" readonly/>天
+        <input class="smallwidth" name="repayment" type="text"/>天
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -124,7 +120,7 @@
         <input class="" name="loan-day" type="checkbox"/>6天
         <input class="" name="loan-day" type="checkbox"/>7天
         <input class="" name="loan-day" type="checkbox"/>其他
-        <input class="smallwidth" name="loan-day" type="text" readonly/>天
+        <input class="smallwidth" name="loan-day" type="text"/>天
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -138,7 +134,7 @@
         <input class="" name="loan-year" type="checkbox"/>4年
         <input class="" name="loan-year" type="checkbox"/>5年
         <input class="" name="loan-year" type="checkbox"/>其他
-        <input class="smallwidth" name="loan-year" type="text" readonly/>年
+        <input class="smallwidth" name="loan-year" type="text"/>年
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -279,7 +275,7 @@
         <label></label>
     </div>
     <div class="span8">
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -292,7 +288,7 @@
         <label></label>
     </div>
     <div class="span8">
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -306,7 +302,7 @@
     </div>
     <div class="span8">
         <span class="gray-text">优势</span>
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -315,7 +311,7 @@
     </div>
     <div class="span8">
         <span class="gray-text">劣势</span>
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -329,7 +325,7 @@
     </div>
     <div class="span8">
         <span class="gray-text"></span>
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -343,7 +339,7 @@
     </div>
     <div class="span8">
         <span class="gray-text"></span>
-        <textarea class="description-box" name="" readonly></textarea>
+        <textarea class="description-box" name=""></textarea>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -351,13 +347,13 @@
         <label>推荐人</label>
     </div>
     <div class="span4">
-        <input class="bigwidth" type="text" readonly/>
+        <input class="bigwidth" type="text"/>
     </div>
     <div class="span2">
         <label>推荐人</label>
     </div>
     <div class="span4">
-        <input class="bigwidth" type="text" readonly/>
+        <input class="bigwidth" type="text"/>
     </div>
 </div>
 <div class="row-fluid product-id">
@@ -365,9 +361,14 @@
         <label>准入时间</label>
     </div>
     <div class="span4">
-        <input class="bigwidth" type="text" readonly/>
+        <input class="bigwidth" type="text"/>
     </div>
 
+</div>
+<div class="pull-to-right">
+    <input class="add-button gray-button" type="button" value="取消"/>
+    <input class="add-button" type="button" value="保存草稿"/>
+    <input class="add-button" type="button" value="保存并返回"/>
 </div>
 </body>
 </html>
