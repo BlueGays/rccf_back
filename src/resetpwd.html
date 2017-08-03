@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width = device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+    <script type="text/javascript" src="js/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.ie8polyfill.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.widgets.helper.js"></script>
+    <script type="text/javascript" src="js/amaze/app.js"></script>
+    <script type="text/javascript" src="js/amaze/handlebars.min.js"></script>
+    <script href="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="css/amaze/amazeui.css"/>
+    <link rel="stylesheet" href="css/amaze/admin.css"/>
+    <link rel="stylesheet" href="css/amaze/amazeui.flat.css"/>
+    <link rel="stylesheet" href="css/instyle.css"/>
+    <style type="text/css">
+        .formdiv{
+            margin-top: 20px;
+        }
+        .am-icon-check{
+            color: green;
+            margin-left: 20px;
+        }
+        .am-form-group{
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="am-g am-center maindiv">
+    <div class="am-u-sm-12 am-u-sm-centered formdiv">
+        <form>
+            <div class="formdiv">
+                <input class="am-form-field am-radius" type="number" placeholder="请输入手机号"/>
+            </div>
+            <div class="formdiv am-g">
+                <div class="am-u-sm-7 am-form-group am-form-icon ">
+                    <i class="am-icon-check"></i>
+                    <input class="am-form-field am-radius" type="text" placeholder="验证码"/>
+                </div>
+                <div class="am-u-sm-5"><img src="http://192.168.1.213:8080//img/randomcode"/></div>
+            </div>
+            <div class="formdiv am-g">
+                <div class="am-u-sm-7"><input class="am-form-field am-radius" type="text" placeholder="验证码"/></div>
+                <div class="am-u-sm-5"><button type="button" class="am-btn am-btn-primary am-btn-block">点击获取验证码</button></div>
+            </div>
+            <div class="formdiv">
+                <input class="am-form-field am-radius" type="password" placeholder="新密码"/>
+            </div>
+            <div class="formdiv">
+                <input class="am-form-field am-radius" type="password" placeholder="确认密码"/>
+            </div>
+
+            <div class="formdiv">
+                <button type="submit" class="am-btn am-btn-primary am-btn-block">提交</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看</title>
+    <link href="css/bootstrap-combined.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/list.css"/>
+</head>
+<body>
+<div class="to-right">
+    <input  class="add-button smallwidth" type="button" value="编辑"/>
+    <input  class="add-button gray-button smallwidth" type="button" value="返回"/>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid product-type">
+        <div class="span2">
+            <label>产品类型</label>
+        </div>
+        <div class="span4">
+            <select class="bigwidth">
+                <option>抵押</option>
+                <option>信贷</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>产品编号</label>
+    </div>
+    <div class="span4">
+        <input class="bigwidth" type="text" readonly/>
+    </div>
+    <div class="span2">
+        <label>银行名称</label>
+    </div>
+    <div class="span4">
+        <input class="bigwidth" type="text" readonly/>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>推荐指数</label>
+    </div>
+    <div class="span6">
+        <input class="" name="recommend-index" type="checkbox"/>特别推荐
+        <input class="" name="recommend-index" type="checkbox"/>推荐
+        <input class="" name="recommend-index" type="checkbox"/>优良
+        <input class="" name="recommend-index" type="checkbox"/>一般
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>贷款形式</label>
+    </div>
+    <div class="span10">
+        <input class="" name="loan-style" type="checkbox"/>保单贷
+        <input class="" name="loan-style" type="checkbox"/>月供贷
+        <input class="" name="loan-style" type="checkbox"/>公积金社保贷
+        <input class="" name="loan-style" type="checkbox"/>工薪贷
+        <input class="" name="loan-style" type="checkbox"/>月供车贷
+        <input class="" name="loan-style" type="checkbox"/>房产贷
+        <input class="" name="loan-style" type="checkbox"/>企业主贷
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span10">
+        <input class="" name="loan-style" type="checkbox"/>税金贷
+        <input class="" name="loan-style" type="checkbox"/>学历贷
+        <input class="" name="loan-style" type="checkbox"/>个人精英贷
+        <input class="" name="loan-style" type="checkbox"/>退休贷
+        <input class="" name="loan-style" type="checkbox"/>公务员贷
+        <input class="" name="loan-style" type="checkbox"/>家停贷
+        <input class="" name="loan-style" type="checkbox"/>他行贷
+    </div>
+</div>
+
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span10">
+        <input class="" name="loan-style" type="checkbox"/>信用积分贷
+        <input class="" name="loan-style" type="checkbox"/>助学贷
+        <input class="" name="loan-style" type="checkbox"/>其他
+        <input class="smallwidth" name="loan-style" type="text" readonly/>万
+
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>贷款人群</label>
+    </div>
+    <div class="span6">
+        <input class="" name="loan-crown" type="checkbox"/>法人代表/股东
+        <input class="" name="loan-crown" type="checkbox"/>实际控股人
+        <input class="" name="loan-crown" type="checkbox"/>自然人
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>还款方式</label>
+    </div>
+    <div class="span6">
+        <input class="" name="repayment" type="checkbox"/>先息后本
+        <input class="" name="repayment" type="checkbox"/>等额本息
+        <input class="" name="repayment" type="checkbox"/>其他
+        <input class="smallwidth" name="repayment" type="text" readonly/>天
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>放款时间</label>
+    </div>
+    <div class="span10">
+        <input class="" name="loan-day" type="checkbox"/>1天
+        <input class="" name="loan-day" type="checkbox"/>2天
+        <input class="" name="loan-day" type="checkbox"/>3天
+        <input class="" name="loan-day" type="checkbox"/>4天
+        <input class="" name="loan-day" type="checkbox"/>5天
+        <input class="" name="loan-day" type="checkbox"/>6天
+        <input class="" name="loan-day" type="checkbox"/>7天
+        <input class="" name="loan-day" type="checkbox"/>其他
+        <input class="smallwidth" name="loan-day" type="text" readonly/>天
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>贷款年限</label>
+    </div>
+    <div class="span8">
+        <input class="" name="loan-year" type="checkbox"/>1年
+        <input class="" name="loan-year" type="checkbox"/>2年
+        <input class="" name="loan-year" type="checkbox"/>3年
+        <input class="" name="loan-year" type="checkbox"/>4年
+        <input class="" name="loan-year" type="checkbox"/>5年
+        <input class="" name="loan-year" type="checkbox"/>其他
+        <input class="smallwidth" name="loan-year" type="text" readonly/>年
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>上扣费用</label>
+    </div>
+    <div class="span8">
+        <input class="" name="overhead-expenses" type="checkbox" checked/>保险一年千分之4；2-3年千分之8
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>贷款金额</label>
+    </div>
+    <div class="span8">
+        <input class="" name="loan-amount" type="checkbox" checked/>3-50万
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>年龄范围</label>
+    </div>
+    <div class="span8">
+        <input class="" name="age-bracket" type="checkbox" checked/>25-55周岁
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>贷款利率</label>
+    </div>
+    <div class="span8">
+        <input class="" name="loan-rate" type="checkbox" checked/>月息0.85%（年息10.2%）
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>区域</label>
+    </div>
+    <div class="span8">
+        <input class="" name="loan-rate" type="checkbox" checked/>全国保单
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>准备资料</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span10">
+        <span class="gray-text">个人准备资料</span>
+        <input class="" name="personal-info" type="checkbox"/>租赁合同
+        <input class="" name="personal-info" type="checkbox"/>保单
+        <input class="" name="personal-info" type="checkbox"/>征信报告
+        <input class="" name="personal-info" type="checkbox"/>结婚证
+        <input class="" name="personal-info" type="checkbox"/>流水
+        <input class="" name="personal-info" type="checkbox"/>放款储蓄卡
+        <input class="" name="personal-info" type="checkbox"/>购房合同
+        <input class="" name="personal-info" type="checkbox"/>房本
+        <input class="" name="personal-info" type="checkbox"/>财力证明
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text left-text"></span>
+        <input class="" name="personal-info" type="checkbox"/>户口本
+        <input class="" name="personal-info" type="checkbox"/>房本
+        <input class="" name="personal-info" type="checkbox"/>财力证明
+        <input class="" name="personal-info" type="checkbox"/>社保卡
+        <input class="" name="personal-info" type="checkbox"/>公积金卡
+        <input class="" name="personal-info" type="checkbox"/>工资流水
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text left-text"></span>
+        <input class="" name="personal-info" type="checkbox"/>税单
+        <input class="" name="personal-info" type="checkbox"/>行驶证
+        <input class="" name="personal-info" type="checkbox"/>驾驶证
+        <input class="" name="personal-info" type="checkbox"/>购车发票
+        <input class="" name="personal-info" type="checkbox"/>交强险
+        <input class="" name="personal-info" type="checkbox"/>收入证明
+        <input class="" name="personal-info" type="checkbox"/>夫妻双方身份证
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span10">
+        <span class="gray-text">企业准备资料</span>
+        <input class="" name="enterprise-info" type="checkbox"/>公司章程
+        <input class="" name="enterprise-info" type="checkbox"/>流水
+        <input class="" name="enterprise-info" type="checkbox"/>验资报告
+        <input class="" name="enterprise-info" type="checkbox"/>财务报表
+        <input class="" name="enterprise-info" type="checkbox"/>上下游合同
+        <input class="" name="enterprise-info" type="checkbox"/>户口本
+        <input class="" name="enterprise-info" type="checkbox"/>银行账户资料
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text left-text"></span>
+        <input class="" name="enterprise-info" type="checkbox"/>房本
+        <input class="" name="enterprise-info" type="checkbox"/>财力证明
+        <input class="" name="enterprise-info" type="checkbox"/>租赁合同
+        <input class="" name="enterprise-info" type="checkbox"/>婚姻证明(结\离婚证\离婚协议\法院判决书)
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span10">
+        <span class="gray-text left-text"></span>
+        <input class="" name="enterprise-info" type="checkbox"/>夫妻上方身份证明
+        <input class="" name="enterprise-info" type="checkbox"/>企业五证（营业执照、税务登记证、组织机构代码证、开户许可证、机构信用代码证）
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>进件要求</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>流程</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>产品优/劣势</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text">优势</span>
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text">劣势</span>
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>注意事项</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text"></span>
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>毙单原因</label>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label></label>
+    </div>
+    <div class="span8">
+        <span class="gray-text"></span>
+        <textarea class="description-box" name="" readonly></textarea>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>推荐人</label>
+    </div>
+    <div class="span4">
+        <input class="bigwidth" type="text" readonly/>
+    </div>
+    <div class="span2">
+        <label>推荐人</label>
+    </div>
+    <div class="span4">
+        <input class="bigwidth" type="text" readonly/>
+    </div>
+</div>
+<div class="row-fluid product-id">
+    <div class="span2">
+        <label>准入时间</label>
+    </div>
+    <div class="span4">
+        <input class="bigwidth" type="text" readonly/>
+    </div>
+
+</div>
+</body>
+</html>

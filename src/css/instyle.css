@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-size: 10px;
+    height: auto !important;
+}
+
+ul {
+    width: 100%;
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    height: auto !important;
+    font-family: Helvetica, Tahoma, Arial, Hiragino Sans GB, \\51AC\9752\9ED1\4F53, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, STXihei, \\534E\6587\7EC6\9ED1, SimSun, \\5B8B\4F53, Heiti, \\9ED1\4F53, sans-serif;
+    background: #e9ecf3;
+    overflow: inherit;
+    color: #333333;
+    margin: 0 auto;
+    max-width: 541px;
+    line-height: 1;
+    text-align: center;
+}
+.am-u-sm-5 img{
+    width: 80%;
+}
+.maindiv{
+    margin-top: 15%;
+}
+@media screen and (min-width: 641px )and (max-width : 1024px) {
+    .maindiv{
+        margin-top: 300px;
+    }
+}

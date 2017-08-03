@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页面</title>
+    <link href="css/list.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+</head>
+<body >
+<div class="wrapper">
+    <span class="query-add">
+        <label>员工工号</label>
+        <input class="smallwidth" type="text" placeholder="请输入" />
+    </span>
+    <span class="query-add">
+        <label>员工姓名</label>
+        <input class="smallwidth" type="text" placeholder="请输入" />
+    </span>
+    <span class="query-add">
+        <label>联系方式</label>
+        <input class="smallwidth" type="text" placeholder="请输入" />
+    </span>
+    <span class="query-add">
+        <label>角色</label>
+        <select>
+            <option>请选择</option>
+            <option>销售总监</option>
+            <option>销售经理</option>
+            <option>市场总监</option>
+            <option>市场经理</option>
+        </select>
+
+    </span>
+    <span class="query-add">
+        <input class="query" type="button" value="查询"/>
+        <input class="query" type="button" value="添加"/>
+    </span>
+    <div class="row">
+        <div class="col-sm-12">
+            <section class="panel">
+                <div class="panel-body">
+                    <div class="adv-table editable-table ">
+                    </div>
+
+                        <div class="space15"></div>
+                        <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                            <thead>
+                            <tr>
+                                <th>员工工号</th>
+                                <th>员工姓名</th>
+                                <th>联系方式</th>
+                                <th>角色</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td>张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a>查看</a>
+                                        <a>编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="">
+                                <td>
+                                    <a href="#">
+                                        1001
+                                    </a>
+                                </td>
+                                <td >张三</td>
+                                <td>12345678902</td>
+                                <td>销售经理</td>
+                                <td>
+                                    <div>
+                                        <a href="#">查看</a>
+                                        <a href="#">编辑</a>
+                                        <a href="#">删除</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery/jquery-1.10.2.min.js"></script>
+<script src="js/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery/jquery.nicescroll.js"></script>
+
+<!--dynamic table-->
+<script type="text/javascript" language="javascript" src="js/advanced-datatable/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
+<!--dynamic table initialization -->
+<script src="js/editable-table.js"></script>
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        EditableTable.init();
+    });
+</script>
+</body>
+</html>

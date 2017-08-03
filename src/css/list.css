@@ -1,0 +1,122 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+.query-add {
+    margin: 20px;
+}
+
+.query {
+    background-color: #aac0cb;
+    display: inline-block;
+    margin: 16px;
+    padding: 5px 18px 6px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+
+}
+.query:hover{
+    background-color: red;
+}
+
+.smallwidth {
+    width: 120px;
+}
+
+.bigwidth {
+    width: 80%;
+}
+
+.float-text {
+    position: absolute;
+    margin-top: -2.5%;
+    margin-left: 10%;
+}
+
+.pull-to-right {
+    margin-left: 15%;
+}
+
+.add-button {
+    width: 250px;
+    box-shadow: inset 0px 0px 10px #3bcddd;
+    -webkit-text-shadow: 0px 0px 3px #000;
+    -moz-text-shadow: 0px 0px 3px #000;
+    -o-text-shadow: 0px 0px 3px #000;
+    -ms-text-shadow: 0px 0px 3px #000;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-right: 30px;
+    padding: 8px;
+    color: #cbf9f7;
+    border-color: #3bcddd;
+    background-color: #3bcddd;
+}
+
+.gray-button {
+    box-shadow: inset 0px 0px 10px darkgray;
+    border-color: darkgray;
+    background-color: darkgray;
+}
+
+.img-upload {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border: solid 1px #000000;
+}
+
+.img-info {
+    margin-left: 45px;
+}
+.img-info5 {
+    margin-left: 35px;
+}
+.img-info7 {
+    margin-left: 20px;
+}
+.img-info9 {
+    margin-left: -5px;
+}
+
+.meetting-icon {
+    padding-left: 19px;
+    background: url(../images/2.jpg) no-repeat;
+}
+.row-fluid{
+    margin-bottom: 20px;
+}
+.to-right{
+    text-align: right;
+}
+.product-type{
+    margin-top: 2%;
+}
+.product-id{
+    margin-left: 1%;
+}
+.gray-text{
+    color: darkgray;
+    margin-right: 20px;
+}
+#line-text{
+    border: solid 1px #ffffff;
+    border-bottom-color: #3bcddd;
+}
+.right-text{
+    margin-left: 20px;
+}
+.left-text{
+    margin-right: 120px;
+}
+.left-text5{
+    margin-right: 150px;
+}
+.description-box{
+    width: 600px;
+    height: 100px;
+}
