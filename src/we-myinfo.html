@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>我的信息</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+    <script type="text/javascript">
+        function alert_info() {
+            alert("请耐心等待，稍后会有工作人员与您联系，请保持通信畅通。");
+        }
+    </script>
+    <style type="text/css">
+        body{
+            background-color: #f9f5ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <p>我的名字</p>
+            </div>
+            <div class="weui-cell__ft"><img src="images/logo.png" height="40px"></div>
+        </div>
+    </div>
+    <div class="weui-cells" onclick="alert_info();">
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>绑定手机号</p>
+            </div>
+            <div class="weui-cell__ft">
+                未绑定
+            </div>
+        </a>
+    </div>
+    <div class="weui-cells">
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的账单</p>
+            </div>
+            <div class="weui-cell__ft">
+            </div>
+        </a>
+        <a class="weui-cell weui-cell_access" href="javascript:;">
+            <div class="weui-cell__bd">
+                <p>我的合同</p>
+            </div>
+            <div class="weui-cell__ft">
+            </div>
+        </a>
+    </div>
+    <!--底部导航栏-->
+    <div class="weui-tabbar">
+        <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+        <span style="display: inline-block;position: relative;">
+            <img src="images/tabbar/home_on.png" alt="" class="weui-tabbar__icon">
+            <!--<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>-->
+        </span>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="images/tabbar/produce.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">产品</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+        <span style="display: inline-block;position: relative;">
+            <img src="images/tabbar/progress.png" alt="" class="weui-tabbar__icon">
+            <!--<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>-->
+        </span>
+            <p class="weui-tabbar__label">进度</p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="images/tabbar/me.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+
+
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+</body>
+</html>
