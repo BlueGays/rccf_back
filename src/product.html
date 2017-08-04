@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>产品介绍</title>
+    <script type="text/javascript" src="js/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.ie8polyfill.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.js"></script>
+    <script type="text/javascript" src="js/amaze/amazeui.widgets.helper.js"></script>
+    <script type="text/javascript" src="js/amaze/app.js"></script>
+    <script type="text/javascript" src="js/amaze/handlebars.min.js"></script>
+    <script href="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
+    <script type="text/javascript">
+        $(function() {
+            $('.am-slider').flexslider({
+                animation: "fade",
+                direction: "horizontal",
+                animationLoop: true,
+                smoothHeight: false,
+                slideshow: true,
+                slideshowSpeed: 1000,
+                playAfterPaused: 3000
+            });
+        });
+    </script>
+    <style type="text/css">
+        html,body{
+            overflow: inherit;
+        }
+        .am-g{
+            width: 600px;
+            text-align: center;
+        }
+        .clear-padding{
+            padding: 0;
+        }
+        p{
+            margin-bottom: -5px;
+        }
+        @media only screen and (max-width: 541px){
+            .am-g{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-
+    <div class="am-g am-center">
+        <div class="am-u-sm-12 am-u-sm-centered am-slider am-slider-a3 " data-am-flexslider id="demo-slider-0">
+            <ul class="am-slides">
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="am-g am-topbar-fixed-bottom">
+            <div class="am-u-sm-3 clear-padding">
+                <p>
+                    <span class="am-icon-home am-icon-sm"></span>
+                </p>
+                <span>首页</span>
+            </div>
+            <div class="am-u-sm-3 clear-padding">
+                <p>
+                    <span class="am-icon-bar-chart am-icon-sm"></span>
+                </p>
+                <span>申请</span>
+            </div>
+            <div class="am-u-sm-3 clear-padding">
+                <p>
+                    <span class="am-icon-hourglass am-icon-sm"></span>
+                </p>
+                    <span>进度</span>
+            </div>
+            <div class="am-u-sm-3 clear-padding">
+                <p>
+                    <span class="am-icon-user am-icon-sm"></span>
+                </p>
+                <span>我的</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
