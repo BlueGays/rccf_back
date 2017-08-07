@@ -10,6 +10,7 @@
     max-width: 541px;
     line-height: 1;
     text-align: center;
+    z-index: 0;
 }
 .am-u-sm-5 img{
     width: 80%;
@@ -17,6 +18,7 @@
 
 /*maindiv 改变整体布局位置*/
 .maindiv{
+    max-width: 541px;
     margin-top: 150px;
 }
 @media screen and (min-width: 641px )and (max-width : 1024px) {
