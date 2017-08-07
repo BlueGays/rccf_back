@@ -17,11 +17,11 @@
 
 /*maindiv 改变整体布局位置*/
 .maindiv{
-    margin-top: 120px;
+    margin-top: 150px;
 }
 @media screen and (min-width: 641px )and (max-width : 1024px) {
     .maindiv{
-        margin-top: 220px;
+        margin-top: 280px;
     }
 }
 @media screen and (max-width: 320px ){
