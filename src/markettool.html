@@ -7,44 +7,38 @@
     <title>RCCF-融成金服</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/weui/1.1.1/style/weui.min.css">
     <style type="text/css">
-        .imgpo img{
-            width: 100%;
-            height: 300px;
+        .weui-cell__hd img{
+            width: 88px;
+            height: 88px;
         }
-        span{
-            display: block;
-            margin-top: -45px;
+        .weui-cell__bd{
+            margin-left: 20px;
+        }
+        .weui-cell__bd p{
             font-size: 20px;
-            color: #2bb8c4;
+        }
+        .weui-cell__ft {
+            text-align: left;
+            display: block;
+            width: 14em;
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
 <body>
-    <div id="list" class="container">
-        <div class="listitem">
-            <div class="imgpo">
-                <img src="images/timg.jpg">
+    <div id="list"  class="weui-cells">
+        <a href="#">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><img src="images/logo.png"></div>
+                <div class="weui-cell__bd">
+                    <p>标题文字</p>
+                    <div class="weui-cell__ft">说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字</div>
+                </div>
             </div>
-            <span>说明文字</span>
-        </div>
-        <div>
-            <div class="imgpo">
-                <img src="images/timg.jpg">
-            </div>
-            <span>说明文字</span>
-        </div>
-        <div>
-            <div class="imgpo">
-                <img src="images/timg.jpg">
-            </div>
-            <span>说明文字</span>
-        </div>
-        <div>
-            <div class="imgpo">
-                <img src="images/timg.jpg">
-            </div>
-            <span>说明文字</span>
-        </div>
+        </a>
     </div>
     <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
