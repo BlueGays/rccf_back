@@ -6,16 +6,18 @@
 </head>
 <body>
     <script>
-        var weight = parseFloat(prompt("体重（kg）："));
-        var height = parseFloat(prompt("身高(m)："));
-        var bmi = weight/height/height;
-        if (bmi <= 18.5){
-            alert("过轻");
-        }else if(bmi >18.5 && bmi<=25){
-            alert("正常");
-        }else{
-            alert("胖");
+        function product(s) {
+            var arr=[];
+            for(var x  in s){
+              arr[x] = s[x];
+            }
+            arr = arr.map(Number);
+            var result = arr.reduce(function (x, y) {
+                return x*10+y;
+            });
+            return result;
         }
-    </script>
+        alert(product("2345"));
+        console.log(typeof product("2345"));    </script>
 </body>
 </html>
