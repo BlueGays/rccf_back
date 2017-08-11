@@ -199,29 +199,449 @@
 
 
     <div class="tpl-content-wrapper">
-        <!--<div class="main">-->
-            <div class="am-g am-center maindiv">
-                <div class="am-u-sm-10 am-u-sm-centered am-text-center">
-                    <h1>融成财富后台管理系统</h1>
+        <div class="am-scrollable">
+            <!--产品类型,产品编号-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-6">
+                    <span>产品类型：</span>
+                    <select>
+                        <option>选择产品类型</option>
+                        <option>质押</option>
+                        <option>抵押</option>
+                    </select>
                 </div>
-                <div class="am-u-sm-10  am-u-sm-centered am-margin-top-xs">
-                    <form>
-                        <div class="am-margin-top-xs">
-                            <input class="am-form-field am-radius" type="text" placeholder="请输入用户名"/>
-                        </div>
-                        <div class="am-margin-top-xs">
-                            <input class="am-form-field am-radius" type="password" placeholder="请输入密码"/>
-                        </div>
-                        <div class="am-text-right am-text-">
-                            <a href="#">忘记密码？</a>
-                        </div>
-                        <div class="am-margin-top-xs">
-                            <button type="button" class="am-btn am-btn-primary am-btn-block">登录</button>
-                        </div>
-                    </form>
+                <div class="am-u-sm-6">
+                    <span>产品编号：</span>
+                    <input type="text"/>
                 </div>
             </div>
-        <!--</div>-->
+            <!--机构类型,机构名称-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-6">
+                    <span>机构类型：</span>
+                    <select>
+                        <option>选择机构类型</option>
+                        <option>机构</option>
+                        <option>银行</option>
+                    </select>
+                </div>
+                <div class="am-u-sm-6">
+                    <span>机构名称：</span>
+                    <input type="text"/>
+                </div>
+            </div>
+            <!--推荐指数-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>推荐指数：</span>
+                    <input type="checkbox" class="am-checkbox-inline" name="our_ratings"/>强烈推荐
+                    <input type="checkbox" class="am-checkbox-inline" name="our_ratings"/>推荐
+                    <input type="checkbox" class="am-checkbox-inline" name="our_ratings"/>优良
+                    <input type="checkbox" class="am-checkbox-inline" name="our_ratings"/>一般
+                </div>
+            </div>
+            <!--还款方式-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>还款方式：</span>
+                    <input type="checkbox" class="am-checkbox-inline" name="repayment_type"/>先息后本
+                    <input type="checkbox" class="am-checkbox-inline" name="repayment_type"/>等额本息
+                    <input type="checkbox" class="am-checkbox-inline" name="repayment_type"/>停本付息
+                </div>
+            </div>
+            <!--贷款人群-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>贷款人群：</span>
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_people"/>企业法人/股东
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_people"/>实际控股人
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_people"/>自然人
+                </div>
+            </div>
+            <!--放款成数-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>放款成数：</span>
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_type"/>评估价
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_type"/>快出价
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_type"/>其他
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>6成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>6.5成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>7成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>7.5成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>8成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>8.5成
+                    <input type="checkbox" class="am-checkbox-inline" name="make_loan_number"/>其他
+                </div>
+            </div>
+            <!--区域范围 -->
+            <!--城六区-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>区域范围：</span>
+                    <em>城六区：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>朝阳区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>海淀区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>东城区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>西城区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>丰台区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>石景山区
+                </div>
+            </div>
+            <!--近郊区域-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <em>近郊区域：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>顺义区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>房山区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>通州区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>大兴区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>亦庄
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>昌平区
+                </div>
+            </div>
+            <!--远郊区域-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <em>远郊区域：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>密云区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>延庆区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>平谷区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>怀柔区
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>门头沟区
+                </div>
+            </div>
+            <!--其他区域-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <em>其他区域：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>五环内区域
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>六环内区域
+                    <input type="checkbox" class="am-checkbox-inline" name="area_coverage"/>补充区域
+                </div>
+            </div>
+            <!--贷款金额 单多套-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>贷款金额：</span>
+                    <span></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_home_amount"/>单套
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_home_amount"/>多套
+                </div>
+            </div>
+            <!--贷款金额-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>100万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>200万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>500万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>1000万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>1500万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>3000万
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_money_amount"/>其他
+                </div>
+            </div>
+            <!--贷款利率 抵押-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>贷款利率：</span>
+                    <em style="margin-right: 1em;">抵押：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮10%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮15%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮20%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮25%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮30%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮35%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>上浮40%
+                    <input type="checkbox" class="am-checkbox-inline" name="loan_dy_rate"/>其他
+                </div>
+            </div>
+            <!--贷款利率 质押-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <em style="margin-right: 1em;">质押：</em>
+                    <strong>展期：</strong>
+                    <input type="radio" class="am-checkbox-inline" name="loan_zy_extend"/>是
+                    <input type="radio" class="am-checkbox-inline" name="loan_zy_extend" checked/>否
+                    <span>展期费</span>
+                    <input type="number" style="width: 4em"/>
+                    <input type="text"  style="margin-left: 2em;" placeholder="一抵，二抵"/>
+                </div>
+            </div>
+            <!--准备资料-->
+            <!--个人准备资料-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap" >
+                    <span>准备资料：</span>
+                    <em>个人准备资料：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>租赁合同
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>征信报告
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>流水
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>购房合同
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>身份证
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>房本
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>财力证明
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>户口本
+                    <input type="checkbox" class="am-checkbox-inline" name="person_pre_info"/>婚姻证明
+                    （结/离婚证/离婚协议/法院判决书）
+                </div>
+            </div>
+            <!--企业准备资料-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap" >
+                    <span style="margin-left: 5em;"></span>
+                    <em>企业准备资料：</em>
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>公司章程
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>流水
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>验资报告
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>财务报表
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>上下游合同
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>户口本
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>房本
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>财力证明
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>租赁合同
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>婚姻证明
+                    （结/离婚证/离婚协议/法院判决书）
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>夫妻双方身份证
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox" class="am-checkbox-inline" name="company_pre_info"/>企业五证
+                    （营业执照、税务登记证、组织机构代码证、开户许可证、机构信用代码证）
+                </div>
+            </div>
+            <!--准入条件-->
+            <!--可申请贷款年龄-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>准入条件：</span>
+                    <span>可申请贷款年龄：</span>
+                    <input type="number"  style="width: 3em;"/>—
+                    <input type="number"  style="width: 3em;"/>周岁;
+                    <input type="number"  style="width: 3em;"/>周岁以上需要子女共借。
+                </div>
+            </div>
+            <!--可申请贷款年限-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请贷款年限：</span>
+                    <input type="number"  style="width: 3em;"/>年
+                    <input type="number"  style="width: 3em;"/>个月。
+                </div>
+            </div>
+            <!--可申请抵押类型-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请抵押类型：</span>
+                    <input type="checkbox"  name="apply_dy_type"/>一抵
+                    <input type="checkbox"  name="apply_dy_type"/>二抵
+                </div>
+            </div>
+            <!--可申请房屋产权-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请房屋产权：</span>
+                    <input type="checkbox"  name="personal_own"/>个人名下
+                    <input type="checkbox"  name="company_own"/>公司名下
+                </div>
+            </div>
+            <!--可申请贷款类型-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请贷款类型：</span>
+                    <input type="checkbox"  name="zy_loan_type"/>企业经营
+                    <input type="checkbox"  name="zy_loan_type"/>个人消费
+                    <input type="checkbox"  name="zy_loan_type"/>补按揭
+                </div>
+            </div>
+            <!--可申请房屋年限-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请房屋年限：</span>
+                    <input type="checkbox"  name="apply_home_age"/>25年内
+                    <input type="checkbox"  name="apply_home_age"/>30年内
+                    <input type="checkbox"  name="apply_home_age"/>35年内
+                </div>
+            </div>
+            <!--可申请房屋性质-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>可申请房屋性质：</span>
+                    <input type="checkbox"  name="apply_home_property"/>住宅
+                    <input type="checkbox"  name="apply_home_property"/>70年产权公寓
+                    <input type="checkbox"  name="apply_home_property"/>成本价
+                    <input type="checkbox"  name="apply_home_property"/>商住
+                    <input type="checkbox"  name="apply_home_property"/>商业
+
+
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox"  name="apply_home_property"/>别墅
+                    <input type="checkbox"  name="apply_home_property"/>写字楼/办公
+                    <input type="checkbox"  name="apply_home_property"/>央产房
+                    <input type="checkbox"  name="apply_home_property"/>厂房
+                </div>
+            </div>
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 13em;"></span>
+                    <input type="checkbox"  name="apply_home_property"/>经济适用房（2008年4月11日之前）
+                    <input type="checkbox"  name="apply_home_property"/>按经适房管理（2008年4月11日之前）
+                </div>
+            </div>
+            <!--民间抵押是否有影响-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>民间抵押是否有影响：</span>
+                    <input type="checkbox"  name="affect_dy_folk"/>有
+                    <input type="checkbox"  name="affect_dy_folk"/>无
+                    （备注：2年内民间一抵不超过半年；二抵不超过3个月）
+                </div>
+            </div>
+            <!--房龄+贷款年限不超过-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>房龄+贷款年限不超过：</span>
+                    <input type="checkbox"  name="homeage_loanyear"/>65年
+                    <input type="checkbox"  name="homeage_loanyear"/>70年
+                    <input type="checkbox"  name="homeage_loanyear"/>80年
+                    <input type="checkbox"  name="homeage_loanyear"/>其他
+                </div>
+            </div>
+            <!--抵贷不一是否可做-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>抵贷不一是否可做：</span>
+                    <input type="checkbox"  name="different_dy_loan"/>是
+                    <input type="checkbox"  name="different_dy_loan"/>否
+                </div>
+            </div>
+            <!--流程细节-->
+            <!--抵押-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>流程细节：</span>
+                    <span>抵押：</span>
+                    <input type="text" style="width: 40em"/>；
+                    最少需要<input type="number" style="width: 3em;"/>天。
+                </div>
+            </div>
+            <!--质押-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span style="margin-left: 5em;"></span>
+                    <span>质押：</span>
+                    <input type="text" style="width: 40em"/>；
+                    最少需要<input type="number" style="width: 3em;"/>天。
+                </div>
+            </div>
+            <!--产品优势-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>产品优势：</span>
+                    <input type="text"  placeholder="第一"/>，
+                    <input type="text"  placeholder="第二"/>，
+                    <input type="text"  placeholder="第三"/>，
+                    <input type="text"  placeholder="第四"/>，
+                    <input type="text"  placeholder="第五"/>。
+                </div>
+            </div>
+            <!--产品劣势-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>产品劣势：</span>
+                    <input type="text"  placeholder="第一"/>，
+                    <input type="text"  placeholder="第二"/>，
+                    <input type="text"  placeholder="第三"/>，
+                    <input type="text"  placeholder="第四"/>，
+                    <input type="text"  placeholder="第五"/>。
+                </div>
+            </div>
+            <!--注意事项-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>注意事项：</span>
+                    <input type="text"  placeholder="第一"/>，
+                    <input type="text"  placeholder="第二"/>，
+                    <input type="text"  placeholder="第三"/>，
+                    <input type="text"  placeholder="第四"/>，
+                    <input type="text"  placeholder="第五"/>。
+                </div>
+            </div>
+            <!--毙单原因-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>毙单原因：</span>
+                    <input type="text" style="width: 40em;" />
+                </div>
+            </div>
+            <!--推荐人-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span> 推 荐 人 ：</span>
+                    <input type="text" style="width: 10em;" />
+                </div>
+            </div>
+            <!--负责人-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span> 负 责 人 ：</span>
+                    <input type="text" style="width: 10em;" />
+                </div>
+            </div>
+            <!--准入时间-->
+            <div class="row am-margin-top">
+                <div class="am-u-sm-12 div_nowrap">
+                    <span>准入时间：</span>
+                    <input type="date" />
+                </div>
+            </div>
+            <!--提交，录入-->
+            <div class=" row am-margin-top">
+                <div class="am-u-sm-4 am-u-sm-centered">
+                    <button class="am-btn am-badge-primary am-radius" style="width: 100%;color: white;">提交录入</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

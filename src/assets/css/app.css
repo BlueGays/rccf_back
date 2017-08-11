@@ -757,11 +757,13 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
     opacity: .7;
     filter: alpha(opacity=70);
 }
-
+.am-scrollable{
+    overflow: auto;
+}
 .row {
     margin-left: -18px;
     margin-right: -18px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .row-mb {
