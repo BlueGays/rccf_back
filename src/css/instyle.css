@@ -5,7 +5,7 @@
     /*margin-left: 35px;*/
 /*}*/
 
-span {
+.div_nowrap span {
     display: inline-block;
     vertical-align: top;
 }
@@ -129,7 +129,12 @@ span {
 .div_nowrap {
     white-space: nowrap;
 }
-
+.am-thumbnail{
+    border: none;
+}
+.am-thumbnail select{
+    width: 12em;
+}
 @media screen and (min-width: 641px )and (max-width: 1024px) {
     .maindiv {
         margin-top: 280px;
