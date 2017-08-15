@@ -135,6 +135,9 @@
 .am-thumbnail select{
     width: 12em;
 }
+.am-input-group-primary{
+    border: solid 1px white;
+}
 @media screen and (min-width: 641px )and (max-width: 1024px) {
     .maindiv {
         margin-top: 280px;

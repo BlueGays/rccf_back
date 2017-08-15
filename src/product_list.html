@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品列表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <style type="text/css">
+        html,body{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-content-body">
+        <div class="am-cf am-padding am-padding-bottom-0">
+            <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">产品列表</strong> /
+                <small>List</small>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-3 am-align-right">
+                <div class="am-input-group am-input-group-sm">
+                    <input class="am-form-field" type="text">
+                    <span class="am-input-group-btn">
+                        <button class="am-btn am-btn-default" type="button">搜索</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="am-g">
+            <div class="am-u-sm-12">
+                <form class="am-form">
+                    <table class="am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
+                        <thead>
+                        <tr>
+                            <th >产品类型</th>
+                            <th >产品编号</th>
+                            <th >银行名称</th>
+                            <th >推荐指数</th>
+                            <th >贷款形式</th>
+                            <th >贷款人群</th>
+                            <th >还款方式</th>
+                            <th >放款成数</th>
+                            <th >放款时间</th>
+                            <th >操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>质押</td>
+                            <td>3.9ZY-FHJK（质押-泛华金控）</td>
+                            <td>泛华金控</td>
+                            <td>优良</td>
+                            <td>保单贷</td>
+                            <td>企业法人/股东</td>
+                            <td>先息后本</td>
+                            <td>评估价、7成</td>
+                            <td>1天</td>
+                            <td>
+                                <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span
+                                        class="am-icon-pencil-square-o"></span> 编辑
+                                </button>
+                                <button class="am-btn am-btn-default am-btn-xs"><span
+                                        class="am-icon-copy"></span> 复制
+                                </button>
+                                <button class="am-btn am-btn-default am-btn-xs am-text-danger">
+                                    <span class="am-icon-trash-o"></span> 删除
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="page"></div>
+<script src="js/jquery/jquery-1.10.2.min.js"></script>
+<script src="js/amaze/amazeui.js"></script>
+</body>
+</html>

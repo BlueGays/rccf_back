@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <style type="text/css">
+        html,body{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="admin-content-body">
+    <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">员工列表</strong> /
+            <small>List</small>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-3 am-align-right">
+            <div class="am-input-group am-input-group-sm">
+                <input class="am-form-field" type="text">
+                <span class="am-input-group-btn">
+                        <button class="am-btn am-btn-default" type="button">搜索</button>
+                    </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <form class="am-form">
+                <table class="am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                    <tr>
+                        <th >员工工号</th>
+                        <th >员工姓名</th>
+                        <th >联系方式</th>
+                        <th >角色</th>
+                        <th >操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>10001</td>
+                        <td>张三</td>
+                        <td>13878982222</td>
+                        <td>销售总监</td>
+                        <td>
+                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span
+                                    class="am-icon-pencil-square-o"></span> 编辑
+                            </button>
+                            <button class="am-btn am-btn-default am-btn-xs"><span
+                                    class="am-icon-copy"></span> 复制
+                            </button>
+                            <button class="am-btn am-btn-default am-btn-xs am-text-danger">
+                                <span class="am-icon-trash-o"></span> 删除
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="page"></div>
+</body>
+</html>
