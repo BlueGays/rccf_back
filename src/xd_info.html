@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信贷</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/product_info.css"/>
+</head>
+<body>
+<header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <a href="javascript:;" class="tpl-logo">
+            <img src="assets/img/logo.png" alt="">
+        </a>
+    </div>
+    <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+
+    </div>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+
+            <li class="am-dropdown" data-am-dropdown="" data-am-dropdown-toggle="">
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img
+                        src="assets/img/user01.png"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li><a href="###" class="tpl-header-list-link"><span
+                    class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="tpl-page-container tpl-page-header-fixed">
+
+    <div class="tpl-left-nav tpl-left-nav-hover">
+        <div class="tpl-left-nav-title">
+            管理列表
+        </div>
+        <div class="tpl-left-nav-list">
+            <ul class="tpl-left-nav-menu">
+                <li class="tpl-left-nav-item">
+                    <a href="#" class="nav-link ">
+                        <i class="am-icon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_personal.html" class="nav-link tpl-left-nav-link-list active ">
+                        <i class="am-icon-users"></i>
+                        <span>信贷</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_personal.html" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-users"></i>
+                        <span>个人消费抵押材料</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-table"></i>
+                        <span>企业经营抵押材料</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_match.html" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-wpforms"></i>
+                        <span>抵押匹配</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="tpl-content-wrapper">
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-lg-6 am-center">
+                <div class="xd must-info_1 am-center am-margin-top am-padding-vertical">
+                    <div>
+                        <span id="gotta_info" class="info-title">月供贷</span>
+                        <span class="info-title"><small>准入条件：</small></span>
+                    </div>
+                    <ol>
+                        <li>按揭、抵押贷款(有北京征信)</li>
+                        <li>还款半年以上(外地一年)(一个月也可以做)</li>
+                        <li>结清(贷款还完)一年之内</li>
+                    </ol>
+                    <span><strong>&emsp;还款方式：</strong>等额本息</span>
+                    <span><strong>&emsp;还款年龄：</strong>25-55周岁(车月供贷暂不受理)</span>
+                    <span><strong>&emsp;贷款利率：</strong>10.25%</span>
+                    <span><strong>&emsp;准备资料：</strong>身份证+房本/购房合同/抵押合同(三选一)</span>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-6 am-center">
+                <div class="xd must-info_2 am-center am-margin-top am-padding-vertical">
+                    <div>
+                        <span class="info-title">保单贷</span>
+                        <span class="info-title"><small>准入条件：</small></span>
+                    </div>
+                    <ol>
+                        <li>借款人需是投保人</li>
+                        <li>缴存的保单满2年3次以上且没有断缴</li>
+                        <li>年缴保费在2400元以上(不同银行会有不同)</li>
+                        <li>以下是外地保单需满足条件(四选一)</li>
+                        <li>1.北京有房产</li>
+                        <li>2.北京社保交满一年</li>
+                        <li>3.北京有公积金交满一年</li>
+                        <li>4.北京有注册企业满一年</li>
+                    </ol>
+                    <span><strong>&emsp;还款方式：</strong>三年期等额本息</span>
+                    <span><strong>&emsp;贷款利率：</strong>10.25%</span>
+                    <span><strong>&emsp;准备资料：</strong>身份证+保单原件</span>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-6 am-center">
+                <div class="xd must-info_3 am-center am-margin-top am-padding-vertical">
+                    <div>
+                        <span class="info-title">工薪贷</span>
+                        <span class="info-title"><small>准入条件：</small></span>
+                    </div>
+                    <ol>
+                        <li>年龄：25-55周岁</li>
+                        <li>工作满6个月(部分银行可3个月)</li>
+                        <li>打卡工资3500以上可走银行(3500以下走小贷公司)</li>
+                        <li>北京社保缴满6个月(部分银行可3个月)</li>
+                    </ol>
+                    <span><strong>&emsp;准备资料：</strong>身份证、社保卡、收入证明、个人流水(近半年)、
+                        住址证明(水电暖煤气小票选其一，机构需要，银行不需要)</span>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-6 am-center">
+                <div class="xd must-info_4 am-center am-margin-top am-padding-vertical">
+                    <div>
+                        <span class="info-title">社保贷</span>
+                        <span class="info-title"><small>准入条件：</small></span>
+                    </div>
+                    <ol>
+                        <li>社保连续缴纳18个月以上且没有断档</li>
+                    </ol>
+                    <span><strong>&emsp;准备资料：</strong>身份证、社保卡</span>
+                    <span><strong>&emsp;贷款金额：</strong>缴纳基数5000-6000：:20倍；缴纳基数6000以上：30倍。</span>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-6 am-center">
+                <div class="xd must-info_4 am-center am-margin-top am-padding-vertical">
+                    <div>
+                        <span class="info-title">公积金贷款</span>
+                        <span class="info-title"><small>准入条件：</small></span>
+                    </div>
+                    <ol>
+                        <li>公积金缴满一年以上</li>
+                        <li>个人缴存480以上</li>
+                    </ol>
+                    <span><strong>&emsp;准备资料：</strong>身份证、公积金卡</span>
+                    <span><strong>&emsp;贷款利率：</strong>4.25%</span>
+                    <span><strong>&emsp;贷款金额：</strong>个人缴存额度的250倍</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    var div_height = $("#gotta_info").height();
+</script>
+</body>
+</html>

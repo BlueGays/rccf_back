@@ -18,10 +18,19 @@ html,body{
 
 }
 .must-info_4{
-    color: #9f9674;
-    background-color: #283c36;;
+    color: #333333;
+    background-color: #b8cd83;;
     border-radius: 10px;
 
+}
+.must-info_5{
+    color: #333333;
+    background-color: #b8cd83;;
+    border-radius: 10px;
+
+}
+.xd span{
+    display: block;
 }
 .info-title{
     display:block;
@@ -73,7 +82,7 @@ html,body{
         margin-right: auto;
         float: none;
     }
-    .must-info_1 , .must-info_2{
-        height: 25em;
+    .must-info_1 , .must-info_2 ,.must-info_3,.must-info_4,.must-info_5{
+        height: 28em;
     }
 }
