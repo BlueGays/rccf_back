@@ -23,3 +23,20 @@ html,body{
     display: block;
     text-align: center;
 }
+
+@media screen and (max-width:480px ){
+     .at_phone{
+         display: block;
+     }
+    .at_pc{
+        display: none;
+    }
+}
+@media screen and (min-width: 780px) {
+    .at_pc{
+        display: block;
+    }
+    .at_phone{
+        display: none;
+    }
+}
