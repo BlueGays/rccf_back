@@ -1,14 +1,32 @@
 html,body{
     overflow-y: auto;
 }
-.must-info{
-    color: white;
-    background-color: #0a6999;
+.must-info_1{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 204);;
     border-radius: 10px;
+}
+.must-info_2{
+    color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 255);;
+    border-radius: 10px;
+}
+.must-info_3{
+    color: #333333;
+    background-color: #dcc89d;;
+    border-radius: 10px;
+
+}
+.must-info_4{
+    color: #9f9674;
+    background-color: #283c36;;
+    border-radius: 10px;
+
 }
 .info-title{
     display:block;
-    color: #86f9d9;
+    font-size: large;
+    color: #0b76ac;
     padding-top: 1em;
     margin-left: 1em;
 }
@@ -19,13 +37,17 @@ html,body{
     border-radius: 5px;
     text-align: center;
 }
-.am-u-sm-3 span{
+.am-g .am-u-sm-4 span{
     display: block;
     text-align: center;
 }
 .my-bottom-btn{
     position: fixed;
     bottom: 0;
+}
+
+.management-process{
+    margin-right: 0 !important;
 }
 @media screen and (max-width:480px ){
      .at_phone{
@@ -50,5 +72,8 @@ html,body{
         margin-left: auto;
         margin-right: auto;
         float: none;
+    }
+    .must-info_1 , .must-info_2{
+        height: 25em;
     }
 }
