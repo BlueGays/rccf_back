@@ -1,5 +1,5 @@
 html,body{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .must-info{
     color: white;
@@ -23,13 +23,19 @@ html,body{
     display: block;
     text-align: center;
 }
-
+.my-bottom-btn{
+    position: fixed;
+    bottom: 0;
+}
 @media screen and (max-width:480px ){
      .at_phone{
          display: block;
      }
     .at_pc{
         display: none;
+    }
+    .my-bottom-btn{
+        width: 100%;
     }
 }
 @media screen and (min-width: 780px) {
@@ -38,5 +44,11 @@ html,body{
     }
     .at_phone{
         display: none;
+    }
+    .my-bottom-btn{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
     }
 }
