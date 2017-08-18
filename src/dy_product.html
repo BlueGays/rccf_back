@@ -334,6 +334,30 @@
 <div style="width: 100%;">
     <button class="am-btn am-btn-primary am-btn-block my-bottom-btn">匹配</button>
 </div>
+<!--弹出信息框-->
+<div id="bomb_box" class="bomb-box" >
+    <table class="am-table am-table-bordered am-table-hover am-table-compact">
+        <thead>
+        <tr>
+            <th>产品编号</th>
+            <th>利率</th>
+            <th>放款成数</th>
+            <th>金额</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>3.9ZY-FHJK</td>
+            <td>10.25%</td>
+            <td>7成</td>
+            <td>1500万-3000万</td>
+        </tr>
+        </tbody>
+    </table>
+    <div>
+        <button>关闭</button>
+    </div>
+</div>
 <script type="text/javascript" src="js/jquery/jquery-1.10.2.min.js"></script>
 <script>
     $('input[name="radio-btn"]').wrap('<div class="radio-btn"><i></i></div>');
@@ -352,6 +376,9 @@
     $('.check-box').on('click', function () {
         $(this).find(':checkbox').toggleCheckbox();
         $(this).toggleClass('checkedBox');
+    });
+    $(".my-bottom-btn").bind('click',function () {
+        $("#bomb_box").css("display","block");
     });
 </script>
 </body>

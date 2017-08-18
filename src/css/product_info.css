@@ -1,88 +1,116 @@
-html,body{
+html, body {
     overflow-y: auto;
 }
-.must-info_1{
+
+.must-info_1 {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 204);;
     border-radius: 10px;
 }
-.must-info_2{
+
+.must-info_2 {
     color: rgb(0, 0, 0);
     background-color: rgb(204, 204, 255);;
     border-radius: 10px;
 }
-.must-info_3{
+
+.must-info_3 {
     color: #333333;
     background-color: #dcc89d;;
     border-radius: 10px;
 
 }
-.must-info_4{
+
+.must-info_4 {
     color: #333333;
     background-color: #b8cd83;;
     border-radius: 10px;
 
 }
-.must-info_5{
+
+.must-info_5 {
     color: #333333;
     background-color: #b8cd83;;
     border-radius: 10px;
 
 }
-.xd span{
+
+.xd span {
     display: block;
 }
-.info-title{
-    display:block;
+
+.info-title {
+    display: block;
     font-size: large;
     color: #0b76ac;
     padding-top: 1em;
     margin-left: 1em;
 }
-.flow_path{
+
+.flow_path {
     width: 5em;
     height: 5em;
     border: solid 1px white;
     border-radius: 5px;
     text-align: center;
 }
-.am-g .am-u-sm-4 span{
+
+.am-g .am-u-sm-4 span {
     display: block;
     text-align: center;
 }
-.my-bottom-btn{
+
+.my-bottom-btn {
     position: fixed;
     bottom: 0;
 }
 
-.management-process{
+.management-process {
     margin-right: 0 !important;
 }
-@media screen and (max-width:480px ){
-     .at_phone{
-         display: block;
-     }
-    .at_pc{
+
+.bomb-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(59,41,52, 0.5);
+    top: 0;
+    border: solid 1px black;
+    display: none;
+}
+
+@media screen and (max-width: 480px ) {
+    .at_phone {
+        display: block;
+        color: ;
+    }
+
+    .at_pc {
         display: none;
     }
-    .my-bottom-btn{
+
+    .my-bottom-btn {
         width: 100%;
     }
 }
+
 @media screen and (min-width: 780px) {
-    .at_pc{
+    .at_pc {
         display: block;
     }
-    .at_phone{
+
+    .at_phone {
         display: none;
     }
-    .my-bottom-btn{
+
+    .my-bottom-btn {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
         float: none;
     }
-    .must-info_1 , .must-info_2 ,.must-info_3,.must-info_4,.must-info_5{
-        height: 28em;
+
+    .must-info_1, .must-info_2, .must-info_3, .must-info_4, .must-info_5 {
+        height: 32em;
     }
 }
