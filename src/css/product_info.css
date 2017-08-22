@@ -63,6 +63,8 @@ html, body {
 .my-bottom-btn {
     position: fixed;
     bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .management-process {
@@ -75,10 +77,11 @@ html, body {
     height: 100%;
     background: rgba(255,255,255 ,1);
     top: 0;
-    border: solid 1px black;
     display: none;
 }
-
+input[type="number"]{
+    border-bottom:solid 1px #333333;
+}
 @media screen and (max-width: 480px ) {
     .at_phone {
         display: block;
@@ -88,9 +91,6 @@ html, body {
         display: none;
     }
 
-    .my-bottom-btn {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 780px) {
@@ -100,13 +100,6 @@ html, body {
 
     .at_phone {
         display: none;
-    }
-
-    .my-bottom-btn {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
     }
 
     .must-info_1, .must-info_2, .must-info_3, .must-info_4, .must-info_5 {
