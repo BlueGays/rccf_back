@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=0" />
+    <link rel="stylesheet" href="css/weui.min.css" />
+    <link rel="stylesheet" href="css/jquery-weui.min.css" />
+    <style type="text/css">
+        .swiper-slide img{
+            width: 100%;
+            height: 150px;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            width: 20px;
+            height: 40px;
+            background-size: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 首页轮播图 -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="image/3.jpg"/></div>
+            <div class="swiper-slide"><img src="image/4.jpg"/></div>
+            <div class="swiper-slide"><img src="image/5.jpg"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        effect:"coverflow",
+        speed: 1000,
+        autoplay:2000,
+        autoplayDisableOnInteraction:false,
+        loop:true,
+        spaceBetween: 20
+    });
+</script>
+</body>
+</html>

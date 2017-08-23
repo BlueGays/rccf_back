@@ -2,20 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width"/>
-    <title>页面全图</title>
+    <title>个人消费抵押材料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/product_info.css"/>
 </head>
-<body style="margin: 0;overflow-x: hidden">
-    <div>
-        <img id="allpageimg" src="images/timg.jpg"/>
+<body>
+<header class="am-topbar am-topbar-inverse admin-header">
+    <div class="am-topbar-brand">
+        <a href="javascript:;" class="tpl-logo">
+            <img src="assets/img/logo.png" alt="">
+        </a>
     </div>
-    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript">
-        var image = $("#allpageimg");
-        var screen_x = $(document.body).width();
-        var screen_y = $(window).height();
-        image.css("width",screen_x);
-        image.css("height",screen_y);
-    </script>
+    <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
+
+    </div>
+
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+
+    <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+        <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+
+            <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span
+                    class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+
+            <li class="am-dropdown" data-am-dropdown="" data-am-dropdown-toggle="">
+                <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+                    <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img
+                        src="assets/img/user01.png"></span>
+                </a>
+                <ul class="am-dropdown-content">
+                    <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
+                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                </ul>
+            </li>
+            <li><a href="###" class="tpl-header-list-link"><span
+                    class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="tpl-page-container tpl-page-header-fixed">
+
+    <div class="tpl-left-nav tpl-left-nav-hover">
+        <div class="tpl-left-nav-title">
+            管理列表
+        </div>
+        <div class="tpl-left-nav-list">
+            <ul class="tpl-left-nav-menu">
+                <li class="tpl-left-nav-item">
+                    <a href="#" class="nav-link ">
+                        <i class="am-icon-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="xd_info.html" class="nav-link tpl-left-nav-link-list  ">
+                        <i class="am-icon-compass am-icon-fw"></i>
+                        <span>信贷相关资料</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list active">
+                        <i class="am-icon-cc-visa  am-icon-fw"></i>
+                        <span>个人消费抵押材料</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_company.html" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-cogs  am-icon-fw"></i>
+                        <span>企业经营抵押材料</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_match.html" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-wpforms am-icon-fw"></i>
+                        <span>抵押匹配</span>
+                    </a>
+                </li>
+                <li class="tpl-left-nav-item">
+                    <a href="dy_info_match.html" class="nav-link tpl-left-nav-link-list">
+                        <i class="am-icon-clone am-icon-fw"></i>
+                        <span>信贷匹配</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="tpl-content-wrapper">
+        <div class="tpl-portlet-components"  style="background-color:#2bb8c4;min-height: 500px;color: white">
+            <div style="width: 100%;text-align: center;margin-top: 3.5em">
+                <span style="font-size: 2.5em;">欢迎使用</span>
+            </div>
+            <div style="width: 100%;padding:10px;text-align: center">
+                <span style="font-size: 2em;">融成金服后台管理系统</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -8,12 +8,17 @@
     <link rel="stylesheet" type="text/css" href="assets/css/amazeui.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
     <style type="text/css">
+
+        body{
+            overflow-y: scroll;
+        }
         .am-list span {
             display: inline-block;
         }
         .am-list > li {
             border: none;
         }
+
     </style>
 </head>
 <body>
@@ -69,6 +74,42 @@
                 <span></span>
             </li>
         </ul>
+        <div class="am-scrollable-horizontal">
+            <table class="am-table am-table-bordered am-text-nowrap" >
+                <tr>
+                    <th>贷款年限</th>
+                    <th>基准利率</th>
+                    <th>上浮10%</th>
+                    <th>上浮20%</th>
+                    <th>上浮30%</th>
+                    <th>上浮35%</th>
+                </tr>
+                <tr>
+                    <td>一年</td>
+                    <td>4.35%</td>
+                    <td>4.79%</td>
+                    <td>5.22%</td>
+                    <td>5.66%</td>
+                    <td>5.87%</td>
+                </tr>
+                <tr>
+                    <td>一至五年</td>
+                    <td>4.35%</td>
+                    <td>4.79%</td>
+                    <td>5.22%</td>
+                    <td>5.66%</td>
+                    <td>5.87%</td>
+                </tr>
+                <tr>
+                    <td>五年以上</td>
+                    <td>4.35%</td>
+                    <td>4.79%</td>
+                    <td>5.22%</td>
+                    <td>5.66%</td>
+                    <td>5.87%</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

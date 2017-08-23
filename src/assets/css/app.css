@@ -1059,8 +1059,6 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
     margin-bottom: 0;
 }
 
-.am-table>tbody>tr>td,
-.am-table>tbody>tr>th,
 .am-table>tfoot>tr>td,
 .am-table>tfoot>tr>th,
 .am-table>thead>tr>td,
