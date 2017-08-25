@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    overflow-y: auto;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 150px;
+}
+
+.swiper-container_1 {
+    width: 15em;
+    height: 14em;
+
+    margin-left: 2em;
+}
+.my_container{
+    box-sizing: content-box;
+    width: 21em;
+    margin-top: 1em;
+    margin-left: 1em;
+    border: 5px solid #E2F5D6 !important;
+}
+
+.swiper-container_1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    /* Center slide text vertically */
+    background-position: center;
+    background-size: cover;
+}
+
+.hot-pro {
+    color: yellow;
+    font-size: 1.5em;
+    text-shadow: yellow 2px 0 2px;
+    margin-right: 10px;
+}
+
+.hot_product-slide-top {
+    border: 1px solid #E2F5D6;
+    border-radius: 10px;
+}
+
+.text {
+    margin: auto 10px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.button {
+    margin: 10px auto;
+    border: none;
+    height: 35px;
+    width: 200px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(to right, #FFB874, #FF8187);
+}
+
+.money {
+    text-align: center;
+    color: #ff6600;
+    margin-top: 0.5em;
+}
+
+.money strong {
+    font-size: 2.2em;
+}
+.do_money{
+    color: #ff6600;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    font-size: 1.6em;
+}
+.do_rate_month{
+
+}
+.rate_month {
+    color: #23527c;
+    margin-top: 0.5em;
+    padding-left: 0.2em;
+}
+
+.rate_month strong {
+    color: #ff6600;
+}
+.salesman{
+    width: 5em;
+    height: 6em;
+
+}
