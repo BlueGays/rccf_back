@@ -6,48 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=0"/>
     <link rel="stylesheet" href="css/weui.min.css"/>
     <link rel="stylesheet" href="css/jquery-weui.min.css"/>
-    <style type="text/css">
-        .swiper-container img {
-            width: 100%;
-            height: 150px;
-        }
-
-        .swiper-container_1 {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-container_1 .swiper-slide {
-            text-align: center;
-            margin-left: 5%;
-            font-size: 18px;
-            background: #fff;
-            width: 70%;
-            height: 210px;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-
-        /*.swiper-slide:nth-child(2n) {*/
-            /*width: 60%;*/
-        /*}*/
-
-        /*.swiper-slide:nth-child(3n) {*/
-            /*width: 40%;*/
-        /*}*/
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!-- 首页轮播图 -->
@@ -61,10 +20,10 @@
     </div>
 </div>
 <!--导航按钮-->
-<div class="weui-flex">
+<div class="weui-flex" style="margin-top: 1em;">
     <div class="weui-flex__item">
         <div class="weui-grid__icon">
-            <img src="image/4.jpg" alt="">
+            <img src="image/4.png" alt="">
         </div>
         <p class="weui-grid__label">
             贷款
@@ -72,36 +31,36 @@
     </div>
     <div class="weui-flex__item">
         <div class="weui-grid__icon">
-            <img src="image/4.jpg" alt="">
+            <img src="image/1.png" alt="">
         </div>
         <p class="weui-grid__label">
-            贷款
+            信用卡
         </p>
     </div>
     <div class="weui-flex__item">
         <div class="weui-grid__icon">
-            <img src="image/4.jpg" alt="">
+            <img src="image/2.png" alt="">
         </div>
         <p class="weui-grid__label">
-            贷款
+            附近银行
         </p>
     </div>
     <div class="weui-flex__item">
         <div class="weui-grid__icon">
-            <img src="image/4.jpg" alt="">
+            <img src="image/3.png" alt="">
         </div>
         <p class="weui-grid__label">
-            贷款
+            咨询
         </p>
     </div>
 </div>
 <!--热门产品介绍-->
-<div class="weui-cells">
+<div class="weui-cells" style="margin-top: 1em;">
     <a class="weui-cell weui-cell_access" href="javascript:;">
         <div class="weui-cell__hd">
-            <img src="image/icon_nav_actionSheet.png">
+            <p class="hot-pro">|</p>
         </div>
-        <div class="weui-cell__bd">
+        <div class="weui-cell__bd hot">
             <p>热门产品</p>
         </div>
         <div class="weui-cell__ft">
@@ -111,23 +70,22 @@
         <div class="swiper-container_1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div style="border: solid 1px #09BB07;border-radius: 5px;box-shadow: 1px -1px 1px 2px #333333;">
-                        <div style="color:#23527c;border-bottom:1px solid lightgray ;margin: 0.5em;padding-bottom:
-                        0.5em;">质押神灯贷-直投贷
+                    <div class="hot_product-slide-top">
+                        <div class="text">
+                            质押神灯贷-直投贷
                         </div>
-                        <div style="text-align: center;color:#ff6600;margin-top:0.5em; ">
-                            <span>¥<strong style="font-size: 2.2em;">3000</strong>万</span>
+                        <div class="money">
+                            <span>¥<strong>3000</strong>万</span>
                         </div>
-                        <div style="color:#23527c;margin-top:0.5em;padding-left: 0.2em; ">
-                            <span>月利率:<strong style="color:#ff6600;">10.25%</strong>&emsp;期 限:<strong
-                            style="color:#ff6600;">0-12</strong>个月</span>
+                        <div class="rate_month" style=" ">
+                            <span>月利率:<strong>10.25%</strong>&emsp;期 限:<strong>0-12</strong>个月</span>
                         </div>
+                        <button class="button">立即申请</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div style="border: solid 1px #09BB07;border-radius: 5px;">
-                        <div style="color:#23527c;border-bottom:1px solid lightgray ;margin: 0.5em;padding-bottom:
-                        0.5em;">质押神灯贷-直投贷
+                    <div class="hot_product-slide-top">
+                        <div class="text">质押神灯贷-直投贷
                         </div>
                         <div style="text-align: center;color:#ff6600;margin-top:0.5em; ">
                             <span>¥<strong style="font-size: 2.2em;">3000</strong>万</span>
@@ -136,11 +94,117 @@
                             <span>月利率:<strong style="color:#ff6600;">10.25%</strong>&emsp;期 限:<strong
                                     style="color:#ff6600;">0-12</strong>个月</span>
                         </div>
+                        <button class="button">立即申请</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hot_product-slide-top">
+                        <div class="text">质押神灯贷-直投贷
+                        </div>
+                        <div style="text-align: center;color:#ff6600;margin-top:0.5em; ">
+                            <span>¥<strong style="font-size: 2.2em;">3000</strong>万</span>
+                        </div>
+                        <div style="color:#23527c;margin-top:0.5em;padding-left: 0.2em; ">
+                            <span>月利率:<strong style="color:#ff6600;">10.25%</strong>&emsp;期 限:<strong
+                                    style="color:#ff6600;">0-12</strong>个月</span>
+                        </div>
+                        <button class="button">立即申请</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hot_product-slide-top">
+                        <div class="text">质押神灯贷-直投贷
+                        </div>
+                        <div style="text-align: center;color:#ff6600;margin-top:0.5em; ">
+                            <span>¥<strong style="font-size: 2.2em;">3000</strong>万</span>
+                        </div>
+                        <div style="color:#23527c;margin-top:0.5em;padding-left: 0.2em; ">
+                            <span>月利率:<strong style="color:#ff6600;">10.25%</strong>&emsp;期 限:<strong
+                                    style="color:#ff6600;">0-12</strong>个月</span>
+                        </div>
+                        <button class="button">立即申请</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hot_product-slide-top">
+                        <div class="text">质押神灯贷-直投贷
+                        </div>
+                        <div style="text-align: center;color:#ff6600;margin-top:0.5em; ">
+                            <span>¥<strong style="font-size: 2.2em;">3000</strong>万</span>
+                        </div>
+                        <div style="color:#23527c;margin-top:0.5em;padding-left: 0.2em; ">
+                            <span>月利率:<strong style="color:#ff6600;">10.25%</strong>&emsp;期 限:<strong
+                                    style="color:#ff6600;">0-12</strong>个月</span>
+                        </div>
+                        <button class="button">立即申请</button>
                     </div>
                 </div>
             </div>
+            <!--<div class="swiper-pagination"></div>-->
         </div>
     </div>
+</div>
+<!--优秀业务员-->
+<div class="weui-cells" style="margin-top: 1em;margin-bottom: 100px;">
+    <a class="weui-cell weui-cell_access" href="javascript:;">
+        <div class="weui-cell__hd">
+            <p class="hot-pro">|</p>
+        </div>
+        <div class="weui-cell__bd hot">
+            <p>优秀业务员</p>
+        </div>
+    </a>
+    <div class="weui-flex" style="margin-top: 1em;">
+        <div class="weui-flex__item">
+            <div class="weui-grid__icon salesman">
+                <img  src="image/user01.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                <small >张XX</small>
+            </p>
+        </div>
+        <div class="weui-flex__item">
+            <div class="weui-grid__icon salesman">
+                <img  src="image/user01.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                <small >李XX</small>
+            </p>
+        </div>
+        <div class="weui-flex__item">
+            <div class="weui-grid__icon salesman">
+                <img  src="image/user01.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+                <small >贺XX</small>
+            </p>
+        </div>
+    </div>
+</div>
+<!--底部导航栏-->
+<div class="weui-tabbar" style="position: fixed">
+    <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+            <span style="display: inline-block;position: relative;">
+                <img src="image/tabbar/home_on.png" alt="" class="weui-tabbar__icon">
+                <!--<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>-->
+            </span>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+        <img src="image/tabbar/produce.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">产品</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+            <span style="display: inline-block;position: relative;">
+                <img src="image/tabbar/progress.png" alt="" class="weui-tabbar__icon">
+                <!--<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>-->
+            </span>
+        <p class="weui-tabbar__label">进度</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+        <img src="image/tabbar/me.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">我的</p>
+    </a>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-weui.min.js"></script>
@@ -156,9 +220,15 @@
     });
     var swiper = new Swiper('.swiper-container_1', {
         pagination: '.swiper-pagination',
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: 30
+        effect: 'coverflow',
+        grabCursor: true,
+        coverflow: {
+            rotate: -50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false
+        }
     });
 </script>
 </body>
