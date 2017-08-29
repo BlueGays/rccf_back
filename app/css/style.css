@@ -6,21 +6,24 @@ body {
     margin: 0 auto;
     overflow-y: auto;
 }
+/*移动端页面*/
 .content_phone{
     max-width: 400px;
     margin: 0 auto;
 }
+/*规范轮播图大小*/
 .swiper-container img {
     width: 100%;
     height: 180px;
 }
-
+/*轮播信息大小*/
 .swiper-container_1 {
     width: 15em;
     height: 14em;
 
     margin-left: 2em;
 }
+/*轮播信息样式*/
 .my_container{
     box-sizing: content-box;
     width: 21em;
@@ -28,7 +31,7 @@ body {
     margin-left: 1em;
     border: 5px solid #E2F5D6 !important;
 }
-
+/*信息轮播调整*/
 .swiper-container_1 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -38,7 +41,7 @@ body {
     background-position: center;
     background-size: cover;
 }
-
+/*信息样式*/
 .hot-pro {
     color: yellow;
     font-size: 1.5em;
@@ -55,23 +58,6 @@ body {
     margin: auto 10px;
     line-height: 40px;
     border-bottom: 1px solid #eee;
-}
-
-.button {
-    margin: 10px auto;
-    border: none;
-    height: 35px;
-    width: 200px;
-    color: white;
-    border-radius: 20px;
-    background: linear-gradient(to right, #FFB874, #FF8187);
-}
-.call_me{
-    width: 95%;
-    border: none;
-    /*border-bottom:1px solid #0b76ac;*/
-    background-color: white;
-    font-size: 1.2em;
 }
 .money {
     text-align: center;
@@ -104,4 +90,57 @@ body {
     width: 95%;
     height: 8em;
 
+}
+/*立即申请按钮*/
+.button {
+    margin: 10px auto;
+    border: none;
+    height: 35px;
+    width: 200px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(to right, #FFB874, #FF8187);
+}
+/*闪烁字体效果区域*/
+.call_me{
+    width: 95%;
+    border: none;
+    /*border-bottom:1px solid #0b76ac;*/
+    background-color: white;
+    font-size: 1.2em;
+}
+/*轮播图标题信息样式*/
+.swiper-slide .subtitle {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    color: whitesmoke;
+    background: rgba(51,51,51,0.5);
+    font-size: 21px;
+}
+/*标题字体*/
+.ti_info{
+    display: block;
+    margin: 0.8em;
+    color: #0c7cb5;
+    font-size: 1.2em;
+    /*border-bottom: 1px solid #eee;*/
+}
+/*内容div*/
+.st_info{
+    margin-top: 1em;
+    margin-left: 5%;
+    width: 90%;
+}
+/*内容字体*/
+.th_info{
+    color: #8f8f8f;
+}
+/*固定底部*/
+.fix_bottom{
+    position: fixed;
+}
+/*包含内容体*/
+.body_container{
+    margin-bottom: 4em;
 }

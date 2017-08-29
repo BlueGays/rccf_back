@@ -22,7 +22,7 @@
     <!--<div class="weui-flex" style="margin-top: 1em;">-->
         <!--<div class="weui-flex__item">-->
             <!--<div class="weui-grid__icon">-->
-                <!--<img src="image/4.png" alt="">-->
+                <!--<img src="image/button4.png" alt="">-->
             <!--</div>-->
             <!--<p class="weui-grid__label">-->
                 <!--贷款-->
@@ -30,7 +30,7 @@
         <!--</div>-->
         <!--<div class="weui-flex__item">-->
             <!--<div class="weui-grid__icon">-->
-                <!--<img src="image/1.png" alt="">-->
+                <!--<img src="image/button1.png" alt="">-->
             <!--</div>-->
             <!--<p class="weui-grid__label">-->
                 <!--信用卡-->
@@ -38,7 +38,7 @@
         <!--</div>-->
         <!--<div class="weui-flex__item">-->
             <!--<div class="weui-grid__icon">-->
-                <!--<img src="image/2.png" alt="">-->
+                <!--<img src="image/button2.png" alt="">-->
             <!--</div>-->
             <!--<p class="weui-grid__label">-->
                 <!--附近银行-->
@@ -46,7 +46,7 @@
         <!--</div>-->
         <!--<div class="weui-flex__item">-->
             <!--<div class="weui-grid__icon">-->
-                <!--<img src="image/3.png" alt="">-->
+                <!--<img src="image/button3.png" alt="">-->
             <!--</div>-->
             <!--<p class="weui-grid__label">-->
                 <!--咨询-->
@@ -208,7 +208,7 @@
             slideShadows: false
         }
     });
-//    后台获取页首图片并显示
+//  后台获取页首图片并显示
     $.ajax({
         url: "./jsa",
         dataType: "json",
@@ -217,7 +217,10 @@
                 var info = JSON.parse(result.data);
                 for (var i = 0; i < info.length; i++) {
                     var src = info[i].img;
-                    var list = "<div  class=\"swiper-slide\"><img src=\""+src+"\"/></div>";
+                    var time = info[i].createTime;
+                    var list = '<div  class="swiper-slide"><img src="'+src+'"/>' +
+                        '<div class="subtitle" data-swiper-parallax="-200">'+time+'</div>'+
+                        '</div>';
                     mySwiper.appendSlide(list);
                 }
             }
@@ -226,7 +229,7 @@
             }
         }
     });
-// 获取优秀员工信息
+//  获取优秀员工信息
     $.ajax({
         url: "./emp",
         dataType: "json",
@@ -252,7 +255,7 @@
             }
         }
     });
-//    文字闪烁效果
+//  文字闪烁效果
     function changeColor(){
         var color="red|green|blue";
         color=color.split("|");
