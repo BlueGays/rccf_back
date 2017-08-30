@@ -136,7 +136,12 @@
     width: 12em;
 }
 .am-input-group-primary{
-    border: solid 1px white;
+    margin-bottom: 5px;
+}
+.whiteback{
+    border:1px solid #3b2c8f;
+    background-color: white;
+    width: 10em;
 }
 @media screen and (min-width: 641px )and (max-width: 1024px) {
     .maindiv {
