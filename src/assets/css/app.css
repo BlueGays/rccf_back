@@ -1470,6 +1470,7 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 }
 
 .am-input-group {
+    position: static!important;
     border-radius: 3px;
     overflow: hidden;
 }
