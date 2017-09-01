@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    position: relative;
+    background: #fff;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333333;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    max-width: 480px;
+}
+.head{
+    height: 5.5em;
+    background:url("../image/market/head.jpg") no-repeat;
+}
+.company{
+    margin-top: 2em;
+    margin-left: 2.5em;
+    color: #E5F344;
+    height: 1.7em;
+}
+.title{
+    display: block;
+    margin-top: 0em;
+    margin-left: 2.5em;
+    height: 0.5em;
+}
+.container{
+    width: 100%;
+    margin-top: 0.4em;
+    /*border-bottom:0.3em solid #F3F3F3;*/
+
+}
+.container:before,
+.container:after{
+    content: "";
+    clear: both;
+}
+.explanation{
+    display: block;
+    font-size: 0.6em;
+    margin:0 auto;
+    padding: 0.1em;
+    width: 10em;
+    text-align: center;
+    background-color: #FF002C;
+    color: white;
+    border-radius: 25px;
+}
+.my_container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+.my_container div{
+    height: 50px;
+}
+.my_row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.my_col{
+    display: inline-block;
+    width: 23%;
+}
+.my_col img{
+    width: 80%;
+}
+.my_col p{
+    font-size: small;
+}
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 21.33333333px !important;
+    }
+
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 22.08px !important;
+    }
+
+}
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 25.6px !important;
+    }
+
+}
