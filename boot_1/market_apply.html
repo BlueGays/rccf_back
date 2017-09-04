@@ -23,11 +23,11 @@
     <div class="ap_form">
         <div class="ap_input fz30">
             <span>客户姓名：</span>
-            <input class="fz30" type="text" placeholder="请输入姓名"/>
+            <input id="name" type="text" placeholder="请输入姓名"/>
         </div>
         <div class="ap_input fz30">
             <span>手机号码：</span>
-            <input class="fz30" type="number" placeholder="请输入手机号码"/>
+            <input id="phone"  type="number" placeholder="请输入手机号码"/>
         </div>
         <div class="ap_btn">
             <button class="btn fz32">立即申请</button>
@@ -39,5 +39,18 @@
         <p>全方位产品配置，为客户提供一切解决方案</p>
     </div>
 </div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+
+    $("input").change( function() {
+        var name =  $("#name").val();
+        var phone = $("#phone").val();
+        if( name &&  phone){
+            $(".btn").css("color","white");
+        }else{
+            $(".btn").css("color","darkred");
+        }
+    });
+</script>
 </body>
 </html>
