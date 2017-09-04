@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    position: relative;
+    background: #fff;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333333;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    max-width: 375px;
+}
+.head{
+    height: 30%;
+    background:url("../images/market/head.jpg") no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.company{
+    height: 25%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+.title{
+    height: 10%;
+    margin-top: 0;
+    margin-left: 10%;
+}
+.container{
+    margin-top: 3%;
+    width: 375px;
+    border-bottom:10px solid #F3F3F3;
+}
+.our_adv{
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 50%;
+    text-align: center;
+    background-color: #EA4041 ;
+    color: #F9DAD8;
+    border-radius: 25px;
+}
+.information{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 90%;
+    height: 4em;
+    border:2px solid #F19998;
+    border-radius: 10px;
+}
+.information p{
+    margin-top: 0.9em;
+    font-size: 1.1em;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.advantage{
+    margin-top: 5%;
+    border: 3px solid #fff3f3;
+    border-radius: 10px ;
+}
+.span_1{
+    font-size: 1.2em;
+    color: white;
+    background-color:#6DA8E2 ;
+    padding: 0.3em;
+    border-radius: 10px 10px 0  0 ;
+}
+.span_2{
+    font-size: 1.2em;
+    color: white;
+    background-color:#61D862 ;
+    padding: 0.3em;
+    border-radius: 10px 10px 0  0 ;
+}
+.span_3{
+    font-size: 1.2em;
+    color: white;
+    background-color:#F5CB55 ;
+    padding: 0.3em;
+    border-radius: 10px 10px 0  0 ;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+}
+.btn{
+    font-size: 1.2em;
+    background-color: #F44154;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.btn_1{
+    font-size: 1em;
+    background-color: #F44154;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.col-xs-3{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-xs-3 img{
+    width: 100%;
+}
+.col-xs-3 p{
+    font-size: 0.4em;
+    text-align: center;
+}
+
+.apply_in{
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    width: 375px;
+    background: url("../images/market/bac.png") no-repeat;
+    background-size: 100% 100%;
+}
+.why, .say, .say_1, .virtue{
+    position: absolute;
+}
+.why{
+    top:1.4em;
+    left: 6em;
+}
+.say{
+    top:2em;
+    left: 13em;
+}
+.say_1{
+    top:5em;
+    left: 6em;
+}
+.virtue{
+    top:10em;
+    left: 2em;
+}
+
+
+.virtue img{
+    height: 2.5em;
+}
+.say_1 img{
+    height: 3em;
+}
+.why img{
+    height: 2.5em;
+}
+.say img{
+    height: 2em;
+}
+.my_form{
+    position: relative;
+    margin-top: 15em;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 11em;
+    border-radius: 10px;
+}
+.input-1{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    padding-left: 0.5em;
+    font-size: 1em;
+    border-bottom: solid 1px #d2d2d2;
+}
+.input-1 input{
+    border: none;
+    width: 10em;
+    height: 2em;
+}
+input:focus,
+input:hover,
+input:checked,
+input:visited
+{
+    border: none;
+}
+.p-adv{
+    margin-top: 5em;
+    font-size: 1em;
+    color: #f3f3f3;
+}
+.p-adv p{
+    text-align: center;
+    margin-top: -0.7em;
+}
