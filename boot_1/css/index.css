@@ -1,7 +1,7 @@
 .head{
     height: 3.64rem;
     width:100%;
-    background-image: url("../images/market/head.jpg");
+    background-image: url("../images/market/head.png");
     background-size: 100% 100%;
 }
 .company{
@@ -58,7 +58,7 @@ li img{
     box-sizing: border-box;
     text-align: left;
     width: 9.2rem;
-    height: 2.533333rem;
+    height: 2.733333rem;
     margin: 0.5333rem auto 0.5333rem;
     box-shadow: 0 0 0.2rem #666666;
     border-radius: 0.23333rem 0.23333rem 0.23333rem 0.23333rem;
