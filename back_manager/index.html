@@ -135,7 +135,7 @@
         </ul>
     </div>
     <div class="tpl-content-wrapper">
-        <iframe id="content_iframe" scrolling="no" src="employee_list.html"  width="100%" >
+        <iframe id="content_iframe" scrolling="no" frameborder="no" src="employee_detail.html"  width="100%" >
         </iframe>
     </div>
 </div>
@@ -145,15 +145,7 @@
 <script src="assets/js/dataTables.responsive.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script>
-    (function wSize() {
-        var str = getWindowWH();
-        var strs = new Array();
-        strs = str.toString().split(",");
-        var h = strs[0];
-        $("#content_iframe").height(h);
-    })();
+    window.onload=startInit('content_iframe', 800);
 </script>
-
 </body>
-
 </html>

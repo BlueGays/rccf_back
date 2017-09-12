@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.page.css"/>
+    <style type="text/css">
+        html, body {
+            overflow: auto;
+        }
+
+        .field_btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="admin-content-body">
+    <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">员工详情</strong> /
+            <small>Detail</small>
+        </div>
+    </div>
+    <hr>
+    <div class="am-container">
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 员工编号:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 员工姓名:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 性&emsp;&emsp;别:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 年&emsp;&emsp;龄:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 联系方式:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 电子邮件:
+                 </span>
+                    <input class="am-form-field" type="email" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 入职日期:
+                 </span>
+                    <input class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 转正日期:
+                 </span>
+                    <input class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 所属部门:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 &emsp;副总监:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 总&emsp;&emsp;监:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 职&emsp;&emsp;位:
+                 </span>
+                    <input class="am-form-field" type="text" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 员工状态:
+                 </span>
+                    <input id="emp_status" class="am-form-field" type="text" value="" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g" id="quit_date" hidden>
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 离职日期:
+                 </span>
+                    <input class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g am-margin-top">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-btn">
+                        <a href="employee_add.html" class="am-btn am-btn-primary field_btn" type="button">编辑</a>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    (function () {
+        var emp_status = $("#emp_status").val();
+        if(emp_status == "离职"){
+            $("#quit_date").css("display","block");
+        }else {
+            $("#quit_date").css("display","none");
+        }
+    })();
+</script>
+</body>
+</html>
