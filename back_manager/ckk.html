@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var url = "http://192.168.1.183:8080/test/jsonp2";
+        $.ajax({
+            type: 'get',
+            url: url,
+            data:{},
+            dataType: 'jsonp',
+            jsonp:'callback',
+            jsonpCallback:'callback',
+            processData: true,
+            success: function (data) {
+                console.log(data.a);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest.status);
+                console.log(XMLHttpRequest.readyState);
+                console.log(textStatus);
+            }
+        });
+    });
+    var callback=function (data) {
+        return data;
+    }
+
+</script>
+</body>
+</html>

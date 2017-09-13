@@ -9,6 +9,7 @@
             if(result.code) {
                 data =JSON.parse(result.data) ;
                 var pages = Math.ceil(data.length / nums); //得到总页数
+                $("#curr").attr("max",pages);
                 $(function () {
                     //返回的是一个page示例，拥有实例方法
                     var $page = $("#page").page({
