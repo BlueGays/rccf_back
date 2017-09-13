@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日受理办结</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.page.css"/>
+    <style type="text/css">
+        html, body {
+            overflow: auto;
+        }
+
+        .w_8 {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+<div class="am-cf am-padding am-padding-bottom-0">
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">今日受理办结列表</strong> /
+        <small>List</small>
+    </div>
+
+</div>
+<hr>
+<div class="am-g">
+    <div class="am-u-sm-12">
+        <form class="am-form am-scrollable-horizontal">
+            <table id="employee_table"
+                   class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
+                <thead>
+                <tr>
+                    <th>预贷金额</th>
+                    <th>实收服务费/元</th>
+                    <th>销售经理</th>
+                    <th>副总</th>
+                    <th>销售总监</th>
+                    <th>后期专员</th>
+                    <th>业务类别</th>
+                    <th>办理状态</th>
+                </tr>
+                </thead>
+                <tbody id="content">
+                <tr>
+                    <td>10</td>
+                    <td>10000</td>
+                    <td>临武</td>
+                    <td>杨三</td>
+                    <td>黑柳</td>
+                    <td>奇葩</td>
+                    <td>信贷</td>
+                    <td>办结</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/table2excel/Blob.js"></script>
+<script src="assets/js/table2excel/FileSaver.js"></script>
+<script src="assets/js/table2excel/tableExport.js"></script>
+<script>
+    $.ajax({
+        url:"",
+        dataType:"json",
+        success:function (result) {
+            if(result.code){
+                var info = JSON.parse(result.data);
+                var str="";
+                for(int i = 0;i<=info.length;i++){
+                    str+='<tr>\n' +
+                        '                    <td>10</td>\n' +
+                        '                    <td>10000</td>\n' +
+                        '                    <td>临武</td>\n' +
+                        '                    <td>杨三</td>\n' +
+                        '                    <td>黑柳</td>\n' +
+                        '                    <td>奇葩</td>\n' +
+                        '                    <td>信贷</td>\n' +
+                        '                    <td>办结</td>\n' +
+                        '                </tr>';
+                }
+            }else {
+                alert(result.error_msg);
+            }
+        }
+    })
+</script>
+</body>
+</html>
