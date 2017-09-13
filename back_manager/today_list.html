@@ -11,10 +11,6 @@
         html, body {
             overflow: auto;
         }
-
-        .w_8 {
-            width: 80%;
-        }
     </style>
 </head>
 <body>
@@ -25,10 +21,15 @@
 
 </div>
 <hr>
+<div class="am-g am-margin ">
+    <div id="export" class="am-u-sm-6 am-u-md-3 am-u-lg-2 am-u-end">
+        <a data-type="csv" href="javascript:;" class="am-btn am-btn-secondary">导出本页表格excel</a>
+    </div>
+</div>
 <div class="am-g">
     <div class="am-u-sm-12">
         <form class="am-form am-scrollable-horizontal">
-            <table id="employee_table"
+            <table id="today_list"
                    class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
                 <thead>
                 <tr>
@@ -88,7 +89,17 @@
                 alert(result.error_msg);
             }
         }
-    })
+    });
+    //导出excel实现
+    var $exportLink = document.getElementById('export');
+    $exportLink.addEventListener('click',
+        function (e) {
+            e.preventDefault();
+            if (e.target.nodeName === "A") {
+                tableExport('today_list', '今日受理办结', e.target.getAttribute('data-type'))
+            }
+        },
+        false);
 </script>
 </body>
 </html>
