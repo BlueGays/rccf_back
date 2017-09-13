@@ -11,7 +11,8 @@
         html, body {
             overflow: auto;
         }
-        .w_8{
+
+        .w_8 {
             width: 80%;
         }
     </style>
@@ -22,9 +23,18 @@
         <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">员工列表</strong> /
             <small>List</small>
         </div>
+
     </div>
     <hr>
-    <div class="am-g">
+    <div class="am-g am-margin ">
+        <div id="display_all" class="am-u-sm-6 am-u-md-3 am-u-lg-1">
+            <a data-type="xls" href="javascript:;" class="am-btn am-btn-secondary ">显示全部员工</a>
+        </div>
+        <div id="export" class="am-u-sm-6 am-u-md-3 am-u-lg-1 am-u-end">
+            <a data-type="xls" href="javascript:;" class="am-btn am-btn-secondary">导出本页表格excel</a>
+        </div>
+    </div>
+    <div class="am-g am-margin">
         <div class="am-u-sm-12 am-u-md-2">
             <div class="am-input-group am-input-group-sm">
                 <select>
@@ -68,7 +78,7 @@
     <div class="am-g">
         <div class="am-u-sm-12">
             <form class="am-form am-scrollable-horizontal">
-                <table
+                <table id="employee_table"
                        class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
                     <thead>
                     <tr>
@@ -113,25 +123,263 @@
     </div>
 </div>
 <div id="page" class="am-align-right"></div>
-    <div class="am-u-lg-4 am-margin-top">
-        <div class="am-input-group am-g">
-            <label class="am-input-group-label">
-                跳转到第
-            </label>
-            <input id="curr" class="am-form-field" min="1" value="1" type="number">
-            <label class="am-input-group-label">
-                页
-            </label>
-            <span class="am-input-group-btn">
+<div id="jump" class="am-u-lg-2 am-margin-top am-align-right">
+    <div class="am-input-group am-g">
+        <label class="am-input-group-label">
+            跳转到第
+        </label>
+        <input id="curr" class="am-form-field" min="1" value="1" type="number">
+        <label class="am-input-group-label">
+            页
+        </label>
+        <span class="am-input-group-btn">
         <button id="set" class="am-btn am-btn-success am-btn-xs">go</button>
     </span>
-        </div>
     </div>
+</div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/amazeui.page.js"></script>
+<script src="assets/js/table2excel/Blob.js"></script>
+<script src="assets/js/table2excel/FileSaver.js"></script>
+<script src="assets/js/table2excel/tableExport.js"></script>
 <script>
-
-    var data = [{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"李四","majordomo":"王五"},{"id":10001,"name":"张三","sex":"男","phone":12833333333,"department":"金融一部","job":"金融顾问","depu":"x四","majordomo":"王五"}];
+    //模拟数据
+    var data = [
+        {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "李四",
+        "majordomo": "王五"
+    }, {
+        "id": 10001,
+        "name": "张三",
+        "sex": "男",
+        "phone": 12833333333,
+        "department": "金融一部",
+        "job": "金融顾问",
+        "depu": "x四",
+        "majordomo": "王五"
+    }];
     var nums = 7; //每页出现的数量
     var pages = Math.ceil(data.length / nums); //得到总页数
 
@@ -141,15 +389,42 @@
             last = curr * nums - 1;
         last = last >= data.length ? (data.length - 1) : last;
         for (var i = (curr * nums - nums); i <= last; i++) {
-            str +='<tr>\n' +
-                '                        <td>'+data[i].id+'</td>\n' +
-                '                        <td>'+data[i].name+'</td>\n' +
-                '                        <td>'+data[i].sex+'</td>\n' +
-                '                        <td>'+data[i].phone+'</td>\n' +
-                '                        <td>'+data[i].department+'</td>\n' +
-                '                        <td>'+data[i].job+'</td>\n' +
-                '                        <td>'+data[i].depu+'</td>\n' +
-                '                        <td>'+data[i].majordomo+'</td>\n' +
+            str += '<tr>\n' +
+                '                        <td>' + data[i].id + '</td>\n' +
+                '                        <td>' + data[i].name + '</td>\n' +
+                '                        <td>' + data[i].sex + '</td>\n' +
+                '                        <td>' + data[i].phone + '</td>\n' +
+                '                        <td>' + data[i].department + '</td>\n' +
+                '                        <td>' + data[i].job + '</td>\n' +
+                '                        <td>' + data[i].depu + '</td>\n' +
+                '                        <td>' + data[i].majordomo + '</td>\n' +
+                '                        <td>\n' +
+                '                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span\n' +
+                '                                    class="am-icon-pencil-square-o"></span> 详情\n' +
+                '                            </button>\n' +
+                '                            <button class="am-btn am-btn-default am-btn-xs"><span\n' +
+                '                                    class="am-icon-copy"></span> 编辑\n' +
+                '                            </button>\n' +
+                '                            <button class="am-btn am-btn-default am-btn-xs am-text-danger">\n' +
+                '                                <span class="am-icon-trash-o"></span> 删除\n' +
+                '                            </button>\n' +
+                '                        </td>\n' +
+                '                    </tr>';
+        }
+        return str;
+    };
+    var all_Data = function () {
+        var str = '';
+        for (var i = 0; i <data.length; i++) {
+            str += '<tr>\n' +
+                '                        <td>' + data[i].id + '</td>\n' +
+                '                        <td>' + data[i].name + '</td>\n' +
+                '                        <td>' + data[i].sex + '</td>\n' +
+                '                        <td>' + data[i].phone + '</td>\n' +
+                '                        <td>' + data[i].department + '</td>\n' +
+                '                        <td>' + data[i].job + '</td>\n' +
+                '                        <td>' + data[i].depu + '</td>\n' +
+                '                        <td>' + data[i].majordomo + '</td>\n' +
                 '                        <td>\n' +
                 '                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span\n' +
                 '                                    class="am-icon-pencil-square-o"></span> 详情\n' +
@@ -166,6 +441,7 @@
         return str;
     };
     $(function () {
+        //原设置iframe高度方法
         function wSize() {
             var str = getWindowWH();
             var strs = new Array();
@@ -173,6 +449,7 @@
             var h = strs[0];
             $("#content_iframe").height(h);
         }
+
         //返回的是一个page示例，拥有实例方法
         var $page = $("#page").page({
             pages: pages, //页数
@@ -205,22 +482,38 @@
              * 触发分页后的回调，如果首次加载时后端已处理好分页数据则需要在after中判断终止或在jump中判断first是否为假
              */
             jump: function (context, first) {
-            console.log('当前第：' + context.option.curr + "页");
-            $("#content").html(thisDate(context.option.curr));
-          }
-    });
-        $("#set").click(function() {
+                console.log('当前第：' + context.option.curr + "页");
+                $("#content").html(thisDate(context.option.curr));
+            }
+        });
+        //点击跳转页数实现
+        $("#set").click(function () {
             var page = $("#curr").val();
-            if( page > pages){
+            if (page > pages) {
                 $("#content").html("当前页无数据！");
-            }else{
-                $page.setCurr(page, function() {
+            } else {
+                $page.setCurr(page, function () {
                     console.log('跳转到第' + page + "页");
                 });
             }
         })
     })
-
+    //导出excel实现
+    var $exportLink = document.getElementById('export');
+    $exportLink.addEventListener('click',
+        function (e) {
+            e.preventDefault();
+            if (e.target.nodeName === "A") {
+                tableExport('employee_table', '员工列表', e.target.getAttribute('data-type'))
+            }
+        },
+        false);
+    //显示全部
+    $("#display_all").bind("click",function () {
+        $("#content").html(all_Data());
+        $("#jump").hide();
+        $("#page").hide();
+    })
 </script>
 </body>
 </html>
