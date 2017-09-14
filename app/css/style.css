@@ -144,3 +144,10 @@ body {
 .body_container{
     margin-bottom: 4em;
 }
+.rule{
+    margin: 1rem;
+    color: #843534;
+}
+.rule ol{
+    margin-left: 2rem;
+}

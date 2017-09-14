@@ -8,17 +8,17 @@
 <script src="assets/js/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        var url = "http://192.168.1.183:8080/test/jsonp2";
+        var url = "http://192.168.1.183:8080/employee/daycount";
         $.ajax({
             type: 'get',
             url: url,
-            data:{},
+            data:{"time":"2017-09-11"},
             dataType: 'jsonp',
             jsonp:'callback',
-            jsonpCallback:'callback',
+            jsonpCallback:'_jsonp',
             processData: true,
             success: function (data) {
-                console.log(data.a);
+                console.log(data);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest.status);
@@ -27,7 +27,7 @@
             }
         });
     });
-    var callback=function (data) {
+    var _jsonp=function (data) {
         return data;
     }
 
