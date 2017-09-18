@@ -15,6 +15,9 @@
         .field_btn {
             width: 100%;
         }
+        .width_btn{
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -169,8 +172,8 @@
         <div class="am-g am-margin-top">
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
-                <span class="am-input-group-btn">
-                        <a href="employee_add.html" class="am-btn am-btn-primary field_btn" type="button">编辑</a>
+                <span id="btns" class="am-input-group-btn">
+                        <a id="edit_emp" href="#" class="am-btn am-btn-primary field_btn">编辑</a>
                 </span>
                 </div>
             </div>
@@ -187,6 +190,14 @@
             $("#quit_date").css("display","none");
         }
     })();
+    $("#edit_emp").bind("click", function () {
+        $("input").removeAttr("readonly");
+        var str="";
+        str+='<a id="edit_emp" href="#" class="am-btn am-btn-primary width_btn">修改</a>' +
+            '<a id="edit_emp" href="#" class="am-btn am-btn-default width_btn">取消</a>';
+        $("#btns").html(str);
+    });
+
 </script>
 </body>
 </html>
