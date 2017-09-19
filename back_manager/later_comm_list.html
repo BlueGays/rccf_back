@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后期专员业绩统计</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <style type="text/css">
+        html, body {
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div class="admin-content-body">
+    <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf">
+            <strong class="am-text-primary am-text-lg">后期专员业绩统计</strong>
+        </div>
+    </div>
+
+    <hr>
+    <!--导出表格-->
+    <div class="am-g am-margin am-padding-right-xl am-text-right">
+        <a id="export" data-type="csv" href="javascript:;" class="am-btn am-btn-secondary">导出表格</a>
+    </div>
+
+    <!--表格-->
+    <div class="am-g ">
+        <div class="am-u-sm-12">
+            <form class="am-form am-scrollable-horizontal">
+                <table id="commissioner_list"
+                       class="am-form-horizontal am-text-nowrap am-table-centered am-table-bordered am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                    <tr>
+                        <th>后期专员</th>
+                        <th>受理中/个</th>
+                        <th>已办结/个</th>
+                        <th>已拒单/个</th>
+                        <th>已撤单/个</th>
+                        <th>办结时效</th>
+                    </tr>
+                    </thead>
+                    <tbody id="content">
+                    <tr>
+                        <td>李潇潇</td>
+                        <td>123</td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>10000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/table2excel/Blob.js"></script>
+<script src="assets/js/table2excel/FileSaver.js"></script>
+<script src="assets/js/table2excel/tableExport.js"></script>
+<script>
+    //jsonp解析函数
+    var commissioner = function (data) {
+        return data;
+    };
+
+    //导出表格
+    var $exportLink = document.getElementById('export');
+    $exportLink.addEventListener('click',
+        function (e) {
+            e.preventDefault();
+            if (e.target.nodeName === "A") {
+                tableExport('accept_list', '受理单列表', e.target.getAttribute('data-type'))
+            }
+        },
+        false);
+
+    //请求信息
+    function getSearchInfo() {
+        $.ajax({
+            url: 'http://192.168.1.37:8080/accept/list',
+            data: {},
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            jsonCallback: 'commissioner',
+            processData: true,
+            success: function (result) {
+                var info = JSON.parse(result);
+                var str = '';
+                console.log(info.length);
+                for (var i = 0; i < info.length; i++) {
+                    var row = info[i];
+                    str += '<tr>\n' +
+                        '                        <td>'+row[1]+'</td>\n' +
+                        '                        <td>'+row[2]+'</td>\n' +
+                        '                        <td>'+row[3]+'</td>\n' +
+                        '                        <td>'+row[4]+'</td>\n' +
+                        '                        <td>'+row[5]+'</td>\n' +
+                        '                        <td>'+row[6]+'</td>\n' +
+                        '                    </tr>'
+                }
+                $('#content').html(str);
+            }
+        });
+    }
+
+    //进入页面请求数据
+    getSearchInfo();
+
+</script>
+</body>
+</html>

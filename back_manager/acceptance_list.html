@@ -25,9 +25,11 @@
     </div>
 
     <hr>
+    <!--导出表格-->
     <div class="am-g am-margin am-padding-right-xl am-text-right">
         <a id="export" data-type="csv" href="javascript:;" class="am-btn am-btn-secondary">导出表格</a>
     </div>
+    <!--筛选条件-->
     <div class="am-g">
         <div class="am-u-sm-12 am-u-md-3 am-margin-bottom">
             <div class="am-input-group am-input-group-sm">
@@ -60,7 +62,7 @@
             </div>
         </div>
     </div>
-
+    <!--表格-->
     <div class="am-g ">
         <div class="am-u-sm-12 am-scrollable-vertical am-scrollable-horizontal">
             <form class="am-form ">
@@ -93,26 +95,26 @@
                     </thead>
                     <tbody id="content">
                     <tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
+                        <!--<td>3.12ZY—GS</td>-->
+                        <!--<td>20070831-001</td>-->
+                        <!--<td>李先生</td>-->
+                        <!--<td>13878982222</td>-->
+                        <!--<td>质押</td>-->
+                        <!--<td>公司</td>-->
+                        <!--<td>工薪贷</td>-->
+                        <!--<td>300万元</td>-->
+                        <!--<td>1.8%</td>-->
+                        <!--<td>13800元</td>-->
+                        <!--<td>2017/8/30</td>-->
+                        <!--<td>甄小姐</td>-->
+                        <!--<td>甄小姐</td>-->
+                        <!--<td>甄小姐</td>-->
+                        <!--<td>办结</td>-->
+                        <!--<td>210</td>-->
+                        <!--<td>是</td>-->
+                        <!--<td>9.18受理</td>-->
+                        <!--<td>2017/9/18</td>-->
+                        <!--<td>李曼</td>-->
                     </tr>
                     </tbody>
                 </table>
@@ -126,11 +128,11 @@
 <script src="assets/js/table2excel/FileSaver.js"></script>
 <script src="assets/js/table2excel/tableExport.js"></script>
 <script>
-
+    //jsonp解析函数
     var acceptance = function (data) {
         return data;
     };
-
+    //导出表格
     var $exportLink = document.getElementById('export');
     $exportLink.addEventListener('click',
         function (e) {
@@ -140,10 +142,13 @@
             }
         },
         false);
+
+    //筛选信息
     $('#search').bind('click', function () {
         getSearchInfo();
     });
 
+    //请求信息
     function getSearchInfo() {
         var obj = {};
         var start = $('#start').val();
@@ -195,6 +200,8 @@
             }
         });
     }
+
+    //进入页面请求数据
     getSearchInfo();
 
 </script>
