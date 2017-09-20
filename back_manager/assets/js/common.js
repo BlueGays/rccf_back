@@ -102,3 +102,11 @@ function getDate(time) {
     return date.format('yyyy-MM-dd')
 }
 
+//  文字闪烁效果
+function changeColor() {
+    var color = "red|green|blue";
+    color = color.split("|");
+    $("").css("color", color[parseInt(Math.random() * color.length)]);
+}
+
+setInterval("changeColor()", 200);

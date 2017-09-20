@@ -414,7 +414,7 @@ button.weui-btn_plain-default, button.weui-btn_plain-primary, input.weui-btn_pla
 
 .weui-cells:before {
     top: 0;
-    border-top: 1px solid #e5e5e5;
+    /*border-top: 1px solid #e5e5e5;*/
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
     -webkit-transform: scaleY(.5);
