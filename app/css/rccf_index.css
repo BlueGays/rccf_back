@@ -1,0 +1,120 @@
+/*页首轮播图*/
+.swiper-container, .swiper-wrapper img {
+    margin: 0;
+    width: 10.0rem;
+    height: 4.0rem;
+}
+
+/*导航按钮组*/
+.rccf_nav_containar {
+    width: 10.0rem;
+    height: 2.666667rem;
+    border-bottom: 0.266667rem solid #f5f5f5;
+}
+
+.rccf_nav {
+    padding-top: 0.266667rem;
+}
+
+.rccf_icon {
+    width: 1.533333rem;
+    height: 1.533333rem;
+}
+
+/*产品介绍*/
+.rccf_product_container {
+    width: 10rem;
+    height: 6.633333rem;
+    border-bottom: 0.266667rem solid #f5f5f5;
+}
+
+.rccf_vertical_line {
+    color:#ff9933 ;
+    background-color: #ff9933;
+    width: 0.133333rem;
+    margin-left: 0.666667rem;
+}
+.rccf_product{
+    width: 6.0rem;
+    height: 4.766667rem;
+    margin-left: 0.666667rem;
+    border: none;
+    border-radius: 0.133333rem;
+    box-shadow: 0 0 0.333333rem #e7e7e7;
+}
+.rccf_product_head{
+    width: 5.466667rem;
+    border-bottom: 1px solid #c0c0c0;
+}
+.rccf_product_info{
+    color:#ff9933 ;
+    text-align: center;
+}
+.rccf_product_btn{
+    display: block;
+    width: 4.066667rem;
+    height: 0.933333rem;
+    margin: 0.266667rem auto;
+    color:#FFFFFF ;
+    background-color: #ff9933;
+    border: none;
+    border-radius: 0.733333rem;
+}
+
+/*企业特色*/
+.rccf_feature img{
+    width:1.333333rem ;
+    height: 1.333333rem;
+}
+
+
+/*底部导航*/
+.rccf_tabbar{
+    position: fixed;
+}
+.rccf_tabbar_icon {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem
+}
+.rccf_tabbar_text{
+    color: #ff9933;
+}
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
+    color: #ff9933;
+}
+
+/*我要贷款*/
+.rccf_loan{
+    text-align: center;
+}
+.rccf_loan .rccf_loan_btn{
+    height: 0.55rem;
+    width: 3.066667rem;
+}
+.rccf_border_radius{
+    border-radius: 0.566667rem;
+}
+.rccf_loan_btn{
+    color: #FFFFFF;
+    background-color: blue;
+
+}
+.rccf_btn_primary{
+    margin-top: 0.2rem;
+    background-color: blue;
+}
+.rccf_circle{
+    margin-left:0.24rem ;
+}
+.rccf_circle i , .rccf_list_icon i{
+    color: #EEEEEE !important;
+}
+.rccf_done{
+    color: #999999 !important;
+}
+.rccf_list img{
+    width: 0.666667rem;
+    height: 0.666667rem;
+    padding-right: 0.3rem;
+}
