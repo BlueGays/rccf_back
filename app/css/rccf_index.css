@@ -37,7 +37,7 @@
 .rccf_product{
     width: 6.0rem;
     height: 4.766667rem;
-    margin-left: 0.666667rem;
+    margin-left: 0.966667rem;
     border: none;
     border-radius: 0.133333rem;
     box-shadow: 0 0 0.333333rem #e7e7e7;
@@ -97,7 +97,7 @@
 }
 .rccf_loan_btn{
     color: #FFFFFF;
-    background-color: blue;
+    background-color: #0c7cb5;
 
 }
 .rccf_btn_primary{
@@ -114,7 +114,30 @@
     color: #999999 !important;
 }
 .rccf_list img{
-    width: 0.666667rem;
-    height: 0.666667rem;
+    width: 17px;
+    height: 17px;
     padding-right: 0.3rem;
+}
+
+/*弹出框*/
+.rccf_popup{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51,51,51,0.1);
+
+}
+.rccf_popup img{
+    position: absolute;
+    top:3.0rem;
+    width: 10.0rem;
+    height: 10.666667rem;
+}
+
+.rccf_all{
+    width: 10rem;
+    height: 100%;
+
 }

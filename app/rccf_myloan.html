@@ -11,119 +11,177 @@
     <link rel="stylesheet" href="css/rccf_index.css">
 </head>
 <body>
-
-<div class="weui-cells rccf_border_bottom_lg fz36">
-    <div class="weui-cell">
-        <div class="weui-cell__bd rccf_loan">
-            贷款进程
+<div class="rccf_body">
+    <div class="weui-cells rccf_border_bottom_lg fz36">
+        <div class="weui-cell">
+            <div class="weui-cell__bd rccf_loan">
+                贷款进程
+            </div>
         </div>
     </div>
-</div>
-<div class="rccf_disply_none">
-    <div class="rccf_margin_top_sm rccf_loan fz40">
-        未绑定手机号，无法查看订单
+    <div class="rccf_disply_none">
+        <div class="rccf_margin_top_sm rccf_loan fz40">
+            未绑定手机号，无法查看订单
+        </div>
+        <button class="rccf_product_btn rccf_loan_btn  fz30">立即绑定</button>
     </div>
-    <button class="rccf_product_btn rccf_loan_btn  fz30">立即绑定</button>
-</div>
-<div class="rccf_disply_none">
-    <div class="rccf_margin_top_sm rccf_loan fz40">
-        手机号：18322222222<br>
-        尚未办理业务。<br>
-        如有疑问，请联系客服。
-    </div>
-</div>
-<div class="rccf_disply_none">
-    <div class="rccf_margin_top_sm rccf_loan fz40">
-        手机号：18322222222<br>
-        尚未办理业务。<br>
-        如有疑问，请联系客服。
-    </div>
-</div>
-<div class="rccf_disply_block">
-    <div class="rccf_margin_top_sm rccf_margin_left fz32">
-        <div>产品单号：<span>20170919-0013</span></div>
-        <div>贷款人：<span>张先生</span></div>
-        <div>客户助理：<span>李晓彤</span></div>
-
-        <div class="rccf_margin_top">
-            <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
-            <span>2017/09/17</span>
-            &emsp;已放款，客户确认
-        </div>
-        <div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-        </div>
-        </div>
-        <div class="rccf_done rccf_list_icon">
-            <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
-            <span>2017/09/17</span>
-            &emsp;贷款审批成功，待放款
-        </div>
-        <div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-        </div>
-        <div class="rccf_done rccf_list_icon">
-            <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
-            <span>2017/09/17</span>
-            &emsp;银行贷款已申请
-        </div>
-        <div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-            <div class="rccf_circle">
-                <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
-            </div>
-        </div>
-        <div class="rccf_done rccf_list_icon">
-            <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
-            <span>2017/09/17</span>
-            &emsp;申请办理贷款，已提交
+    <div class="rccf_disply_none">
+        <div class="rccf_margin_top_sm rccf_loan fz40">
+            手机号：18322222222<br>
+            尚未办理业务。<br>
+            如有疑问，请联系客服。
         </div>
     </div>
+    <div id="progress_info" class="rccf_disply_block fz32">
+        <details class="rccf_margin_top_sm  ">
+            <summary class="rccf_padding" style="outline: #EEEEEE auto 5px;">2017/9/21</summary>
+            <div class="">
+                <div>产品单号：<span>20170919-0013</span></div>
+                <div>贷款人：<span>张先生</span></div>
+                <div>客户助理：<span>李晓彤</span></div>
+                <div class="rccf_margin_top">
+                    <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
+                    <span>2017/09/17</span>
+                    &emsp;已放款，客户确认已放款，客户确认已放款，客户确认已放款，客户确认
+                </div>
+                <div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                </div>
+                <div class="rccf_done rccf_list_icon">
+                    <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
+                    <span>2017/09/17</span>
+                    &emsp;贷款审批成功，待放款
+                </div>
+                <div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                </div>
+                <div class="rccf_done rccf_list_icon">
+                    <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
+                    <span>2017/09/17</span>
+                    &emsp;银行贷款已申请
+                </div>
+                <div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                    <div class="rccf_circle">
+                        <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;
+                    </div>
+                </div>
+                <div class="rccf_done rccf_list_icon">
+                    <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;
+                    <span>2017/09/17</span>
+                    &emsp;申请办理贷款，已提交
+                </div>
+            </div>
+        </details>
+    </div>
 </div>
-
 <div class="weui-tabbar rccf_tabbar">
     <a href="rccf_index.html" class="weui-tabbar__item">
         <img src="image/tabbar/home.png" alt="" class="rccf_tabbar_icon">
-        <p class="weui-tabbar__label fz20 ">首页</p>
+        <p class="weui-tabbar__label fz30 ">首页</p>
     </a>
     <a href="javascript:;" class="weui-tabbar__item">
         <img src="image/tabbar/loan_on.png" alt="" class="rccf_tabbar_icon">
-        <p class="weui-tabbar__label fz20 rccf_tabbar_text">我的贷款</p>
+        <p class="weui-tabbar__label fz30 rccf_tabbar_text">我的贷款</p>
     </a>
     <a href="rccf_mine.html" class="weui-tabbar__item">
         <img src="image/tabbar/me.png" alt="" class="rccf_tabbar_icon">
-        <p class="weui-tabbar__label fz20 ">我的</p>
+        <p class="weui-tabbar__label fz30 ">我的</p>
     </a>
 </div>
 <script src="js/self_adaption.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://192.168.1.37:8080/accept/processes',
+            data: {},
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            jsonCallback: 'loan_progress',
+            success: function (result) {
+                console.log(result);
+                var str = '';
+                for (var i = 0; i < result.length; i++) {
+                    var info = result[i];
+                    str += '<details class="rccf_margin_top_sm  ">\n' +
+                        '        <summary class="rccf_padding" style="outline: #EEEEEE auto 5px;">受理单：' + info.accepted_number + '</summary>\n' +
+                        '        <div class=" rccf_margin_left_lg">\n' +
+                        '            <div>受理单号：<span>' + info.accepted_number + '</span></div>\n' +
+                        '            <div>客户姓名：<span>' + info.customer_name + '</span></div>\n' +
+                        '            <div>销售经理：<span>' + info.clerk_name + '</span></div>\n';
+                    if (isNull(info.clerk_phone)){
+                    } else {
+                        str += '<div>联系电话：<a href="tel:'+info.clerk_phone+'">' + info.clerk_phone + '</a></div>';
+                    }
+                    var da = info.da;
+                    for (var j = da.length - 1; j >= 0; j--) {
+                        var message = da[j];
+                        if (j === da.length - 1) {
+                            str += '<div class="rccf_margin_top">\n' +
+                                '                <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;\n' +
+                                '                <span>' + getDate(message.updateTime) + '</span>\n' +
+                                '                &emsp;' + message.process + '\n' +
+                                '            </div>';
+                        } else {
+                            str += '<div>\n' +
+                                '                <div class="rccf_circle">\n' +
+                                '                    <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;\n' +
+                                '                </div>\n' +
+                                '                <div class="rccf_circle">\n' +
+                                '                    <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;\n' +
+                                '                </div>\n' +
+                                '                <div class="rccf_circle">\n' +
+                                '                    <i class="fa fa-circle rccf_blue_icon fz14"></i>&emsp;\n' +
+                                '                </div>\n' +
+                                '            </div>' +
+                                '<div class="rccf_done rccf_list_icon">\n' +
+                                '                <i class="fa fa-clock-o rccf_blue_icon fa-2x"></i>&emsp;\n' +
+                                '                <span>' + getDate(message.updateTime) + '</span>\n' +
+                                '                &emsp;' + message.process + '\n' +
+                                '            </div>';
+                        }
+
+
+                    }
+
+
+                    str += '</div>\n' +
+                        '    </details>';
+
+                }
+
+                $('#progress_info').html(str);
+
+            }
+        })
+    });
+
+    function loan_progress(data) {
+        return data;
+    }
+</script>
 </body>
 </html>
