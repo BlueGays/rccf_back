@@ -1,3 +1,4 @@
+//判断参数是否为 '' , ' ' , null , 类别是否为 undefined
 function isNull(variable1) {
     if (variable1 === null) {
         return true;
@@ -16,25 +17,31 @@ function isNull(variable1) {
     return false;
 }
 
-
+//null 字符串 ———— 0 原字符串
 function getdata(str) {
     if (str == null) {
         return 0;
     }
     return str;
 }
+
+//null 字符串 ------ 无  原字符串
 function getdata_1(str) {
     if (isNull(str)) {
         return '无';
     }
     return str;
 }
+
+// 0 1  ------- 无  有
 function have(num) {
     if (num == 0) {
         return '无';
     }
     return '有';
 }
+
+//贷款类别
 function getType(type) {
     if (type === 0) {
         return '信用贷';
@@ -49,6 +56,7 @@ function getType(type) {
     }
 }
 
+//受理单状态
 function getState(state) {
     if (state === 1) {
         return '受理';
@@ -62,9 +70,11 @@ function getState(state) {
         return '其他';
     }
 }
+
+//业绩求和
 function get_sum(arr) {
     var sum = 0;
-    for(var i=0 ; i<arr.length;i++){
+    for (var i = 0; i < arr.length; i++) {
         sum += arr[i][6];
     }
     return sum;
@@ -92,10 +102,10 @@ Date.prototype.format = function (format) {
     return format;
 }
 
-
+//时间格式化
 function getDate(time) {
     var date = new Date();
-    if(isNull(time)){
+    if (isNull(time)) {
         return '';
     }
     date.setTime(time);
@@ -103,10 +113,42 @@ function getDate(time) {
 }
 
 //  文字闪烁效果
-function changeColor() {
-    var color = "red|green|blue";
-    color = color.split("|");
-    $("").css("color", color[parseInt(Math.random() * color.length)]);
+function textColor() {
+    function changeColor() {
+        var color = "red|green|blue";
+        color = color.split("|");
+        $("").css("color", color[parseInt(Math.random() * color.length)]);
+    }
+
+    setInterval("changeColor()", 200);
 }
 
-setInterval("changeColor()", 200);
+//判断手机号格式
+function isPhone(num) {
+    var reg_phone = /^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0-9]))\\d{8}$/;
+    if (reg_phone.test(num)) {
+        return true;
+    }else{
+        return false;
+    }
+
+}
+function isMobile(phone) {
+    var reg = /^1[34578]\d{9}$/;
+    if (reg.test(phone)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//判断身份证格式
+function isIdCard(sId) {
+    var reg_idCard = /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/ ;
+    if(reg_idCard.test(sId)){
+        return true;
+    }else{
+        return false;
+    }
+
+}

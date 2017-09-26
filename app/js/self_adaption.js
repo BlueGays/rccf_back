@@ -70,9 +70,9 @@
     var width = docEl.getBoundingClientRect().width;
     console.log("设备宽度:" + width);
     // width / dpr > 540等于独立像素
-    // if (width / dpr > 540) {
-    //   width = 540 * dpr;
-    // }
+    if (width / dpr > 1200) {
+      width = 1200 * dpr;
+    }
     var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem. rem转化px计算公式=d*(width/10)
     console.log(rem);
     docEl.style.fontSize = rem + 'px';
