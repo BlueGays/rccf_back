@@ -45,7 +45,7 @@
         <div class="am-u-sm-12">
             <form class="am-form am-scrollable-horizontal">
                 <table
-                       class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
+                        class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
                     <thead>
                     <tr>
                         <th>客户姓名</th>
@@ -71,6 +71,13 @@
                         <td>12321321312</td>
                         <td>男</td>
                         <td>30</td>
+                        <td>500</td>
+                        <td>3天</td>
+                        <td>个人消费</td>
+                        <td>5</td>
+                        <td>等额本息</td>
+                        <td>A</td>
+                        <td>123456789012345678</td>
                         <td>123456789012345678</td>
                         <td>
                             <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span
@@ -94,7 +101,7 @@
         <label class="am-input-group-label">
             跳转到第
         </label>
-        <input id="curr" class="am-form-field" min="1"  value="1" type="number">
+        <input id="curr" class="am-form-field" min="1" value="1" type="number">
         <label class="am-input-group-label">
             页
         </label>
@@ -106,10 +113,185 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/amazeui.page.js"></script>
 <script>
-    var data = [{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000},{"name":"张三丰","otherName":"小三","phone":12345678901,"sex":"男","age":30,"pid":123445678900000000}];
+    var data = [{
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {
+        "name": "张三丰",
+        "otherName": "小三",
+        "phone": 12345678901,
+        "sex": "男",
+        "age": 30,
+        "pid": 123445678900000000
+    }, {"name": "张三丰", "otherName": "小三", "phone": 12345678901, "sex": "男", "age": 30, "pid": 123445678900000000}];
     var nums = 7; //每页出现的数量
     var pages = Math.ceil(data.length / nums); //得到总页数
-    $("#curr").attr("max",pages);
+    $("#curr").attr("max", pages);
 
     var thisDate = function (curr) {
         //此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
@@ -117,22 +299,26 @@
             last = curr * nums - 1;
         last = last >= data.length ? (data.length - 1) : last;
         for (var i = (curr * nums - nums); i <= last; i++) {
-            str +='<tr>\n' +
-                '                        <td>'+data[i].name+'</td>\n' +
-                '                        <td>'+data[i].otherName+'</td>\n' +
-                '                        <td>'+data[i].phone+'</td>\n' +
-                '                        <td>'+data[i].sex+'</td>\n' +
-                '                        <td>'+data[i].age+'</td>\n' +
-                '                        <td>'+data[i].pid+'</td>\n' +
+            str += '<tr>\n' +
+                '                        <td>' + data[i].name + '</td>\n' +
+                '                        <td>' + data[i].otherName + '</td>\n' +
+                '                        <td>' + data[i].phone + '</td>\n' +
+                '                        <td>' + data[i].sex + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].age + '</td>\n' +
+                '                        <td>' + data[i].pid + '</td>\n' +
+                '                        <td>' + data[i].pid + '</td>\n' +
                 '                        <td>\n' +
                 '                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span\n' +
                 '                                    class="am-icon-pencil-square-o"></span> 详情\n' +
                 '                            </button>\n' +
-                '                            <button class="am-btn am-btn-default am-btn-xs"><span\n' +
+                '                            <button class="am-btn am-btn-default am-btn-xs am-text-danger"><span\n' +
                 '                                    class="am-icon-copy"></span> 编辑\n' +
-                '                            </button>\n' +
-                '                            <button class="am-btn am-btn-default am-btn-xs am-text-danger">\n' +
-                '                                <span class="am-icon-trash-o"></span> 删除\n' +
                 '                            </button>\n' +
                 '                        </td>\n' +
                 '                    </tr>';
@@ -147,6 +333,7 @@
             var h = strs[0];
             $("#content_iframe").height(h);
         }
+
         //返回的是一个page示例，拥有实例方法
         var $page = $("#page").page({
             pages: pages, //页数
@@ -183,12 +370,12 @@
                 $("#content").html(thisDate(context.option.curr));
             }
         });
-        $("#set").click(function() {
+        $("#set").click(function () {
             var page = $("#curr").val();
-            if( page > pages){
+            if (page > pages) {
                 $("#content").html("当前页无数据！");
-            }else{
-                $page.setCurr(page, function() {
+            } else {
+                $page.setCurr(page, function () {
                     console.log('跳转到第' + page + "页");
                 });
             }

@@ -81,6 +81,16 @@
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
                 <span class="am-input-group-label">
+                 联系方式:
+                 </span>
+                    <input id="phone" class="am-form-field" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
                  性&emsp;&emsp;别:
                  </span>
                     <select id="sex" class="am-form-field">
@@ -101,13 +111,73 @@
                 </div>
             </div>
         </div>
+
         <div class="am-g">
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
                 <span class="am-input-group-label">
-                 联系方式:
+                 预贷金额:
                  </span>
-                    <input id="phone" class="am-form-field" type="number">
+                    <input id="want_money" class="am-form-field" type="number" >
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱时间:
+                 </span>
+                    <input id="want_time" class="am-form-field" type="date" >
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 借款用途:
+                 </span>
+                    <input id="use_type" class="am-form-field" type="date" >
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱周期:
+                 </span>
+                    <input id="use_cycle" class="am-form-field" type="date" >
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 还款方式:
+                 </span>
+                    <select id="repayment_type" class="am-form-field" >
+                        <option value="1">等额本金</option>
+                        <option value="2">等额本息</option>
+                        <option value="3">停本付息</option>
+                        <option value="4">先息后本</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                    客户级别:
+                 </span>
+                    <select id="rank" class="am-form-field" >
+                        <option value="0">A</option>
+                        <option value="1">B</option>
+                        <option value="2">C</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -144,13 +214,19 @@
         info.age = $('#age').val();
         info.phone = $('#phone').val();
         info.idcard = $('#idCard').val();
+        info.want_money = $('#want_money').val();
+        info.want_money = $('#want_money').val();
+        info.use_type = $('#use_type').val();
+        info.use_cycle = $('#use_cycle').val();
+        info.rank = $('#rank').val();
+        info.repayment_type = $('#repayment_type').val();
 
         if(!isMobile(info.phone)){
             $('#phone').css('border','solid 1px red');
             alert('手机号填写错误，请仔细检查');
             return;
         }
-        if(isNull(info.idcard)){
+        if(!isNull(info.idcard)){
             if(!isIdCard(info.idcard)){
                 $('#phone').css('border','solid 1px red');
                 alert('身份证号填写错误，请仔细检查');
@@ -182,6 +258,13 @@
     function addCustomer(data) {
         return data;
     }
+    $('#phone').bind('change',function () {
+        if(isMobile($('#phone').val())){
+            $('#phone').css('border','solid 1px #ccc');
+//            alert('手机号填写错误，请仔细检查');
+            return;
+        }
+    });
     $('.img_list img').bind('click',function () {
         var img_src = $(this).attr('src');
         $('.img_big img').attr('src',img_src);

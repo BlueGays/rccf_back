@@ -11,36 +11,41 @@
         html, body {
             overflow: auto;
         }
-        .field_btn{
+
+        .field_btn {
             width: 100%;
         }
+
         .width_btn {
             width: 50%;
         }
 
-        .img_list [class*=am-u-]{
+        .img_list [class*=am-u-] {
             padding: 10px;
             border: dashed 1px #888;
             text-align: center;
             height: 240px;
         }
-        .img_list img{
+
+        .img_list img {
             width: 180px;
             height: 100%;
         }
-        .img_big{
+
+        .img_big {
             display: none;
             position: absolute;
             width: 100%;
             height: 100%;
             text-align: center;
             z-index: 999;
-            background: rgba(66,66,66,0.6);
+            background: rgba(66, 66, 66, 0.6);
         }
-        .img_big img{
+
+        .img_big img {
             display: inline-block;
             width: 500px;
-            height:auto;
+            height: auto;
             margin-top: 50px;
         }
     </style>
@@ -81,6 +86,16 @@
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
                 <span class="am-input-group-label">
+                 联系方式:
+                 </span>
+                    <input id="phone" class="am-form-field" type="number" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
                  性&emsp;&emsp;别:
                  </span>
                     <select id="sex" class="am-form-field" disabled>
@@ -105,12 +120,73 @@
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
                 <span class="am-input-group-label">
-                 联系方式:
+                 预贷金额:
                  </span>
-                    <input id="phone" class="am-form-field" type="number" readonly>
+                    <input id="want_money" class="am-form-field" type="number" readonly>
                 </div>
             </div>
         </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱时间:
+                 </span>
+                    <input id="want_time" class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 借款用途:
+                 </span>
+                    <input id="use_type" class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱周期:
+                 </span>
+                    <input id="use_cycle" class="am-form-field" type="date" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 还款方式:
+                 </span>
+                    <select id="repayment_type" class="am-form-field" disabled>
+                        <option value="1">等额本金</option>
+                        <option value="2">等额本息</option>
+                        <option value="3">停本付息</option>
+                        <option value="4">先息后本</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                    客户级别:
+                 </span>
+                    <select id="rank" class="am-form-field" disabled>
+                        <option value="0">A</option>
+                        <option value="1">B</option>
+                        <option value="2">C</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
         <div class="am-g">
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
@@ -130,17 +206,17 @@
                 </div>
             </div>
         </div>
-        <!--TODO 图片信息-->
-        <div id="img_list" class="am-g am-margin-top am-padding  ">
-            <div class="am-u-sm-12 am-u-md-4 am-u-lg-3 am-u-end img_list">
-                <img src="assets/img/user01.png"/>
-                <input type="file" accept="image/*" style="display: none;" readonly/>
-            </div>
-            <div class="am-u-sm-12 am-u-md-4 am-u-lg-3 am-u-end img_list">
-                <img src="assets/img/user02.png"/>
-                <input type="file" accept="image/*" style="display: none;" readonly/>
-            </div>
-        </div>
+        <!--&lt;!&ndash;TODO 图片信息&ndash;&gt;-->
+        <!--<div id="img_list" class="am-g am-margin-top am-padding  ">-->
+        <!--<div class="am-u-sm-12 am-u-md-4 am-u-lg-3 am-u-end img_list">-->
+        <!--<img src="assets/img/user01.png"/>-->
+        <!--<input type="file" accept="image/*" style="display: none;" readonly/>-->
+        <!--</div>-->
+        <!--<div class="am-u-sm-12 am-u-md-4 am-u-lg-3 am-u-end img_list">-->
+        <!--<img src="assets/img/user02.png"/>-->
+        <!--<input type="file" accept="image/*" style="display: none;" readonly/>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 
 </div>
@@ -148,27 +224,35 @@
 <script src="assets/js/common.js"></script>
 <script>
     $(function () {
-       $.ajax({
-           url:'http://192.168.1.133:8080/user/userinfo',
-           data:{'user_id':'abcdefg'},
-           dataType:'jsonp',
-           jsonp:'callback',
-           jsonCallback:'getCustomer',
-           success:function (result) {
-                    var user =result;
-                    $('#user_name').val(user.userName);
-                    $('#real_name').val(user.realName);
-                    $('#sex').val(user.sex);
-                    $('#age').val(user.age);
-                    $('#phone').val(user.phone);
-                    $('#idCard').val(user.idcard);
+        $.ajax({
+            url: 'http://192.168.1.133:8080/user/userinfo',
+            data: {'user_id': 'abcdefg'},
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            jsonCallback: 'getCustomer',
+            success: function (result) {
+                var user = result;
+                $('#user_name').val(user.userName);
+                $('#real_name').val(user.realName);
+                $('#sex').val(user.sex);
+                $('#age').val(user.age);
+                $('#phone').val(user.phone);
+                $('#idCard').val(user.idcard);
+                $('#want_money').val(user.want_money);
+                $('#want_time').val(user.want_time);
+                $('#use_type').val(user.use_type);
+                $('#use_cycle').val(user.use_cycle);
+                $('#repayment_type').val(user.repayment_type);
+                $('#rank').val(user.rank);
 
-           }
-       })
+            }
+        })
     });
+
     function getCustomer(data) {
         return data;
     }
+
     //  点击编辑 进入可编辑状态
     $("#edit_customer").bind("click", function () {
         $("input").removeAttr("readonly");
@@ -177,23 +261,29 @@
         str += '<a id="update"  href="#" class="am-btn am-btn-primary width_btn">修改</a>' +
             '<a  href="#" class="am-btn am-btn-default width_btn">取消</a>';
         $("#btns").html(str);
-        $('#update').bind('click',function () {
-            var info ={};
+        $('#update').bind('click', function () {
+            var info = {};
             info.user_name = $('#user_name').val();
             info.real_name = $('#real_name').val();
             info.sex = $('#sex').val();
             info.age = $('#age').val();
             info.phone = $('#phone').val();
             info.idcard = $('#idCard').val();
+            info.want_money = $('#want_money').val();
+            info.want_money = $('#want_money').val();
+            info.use_type = $('#use_type').val();
+            info.use_cycle = $('#use_cycle').val();
+            info.rank = $('#rank').val();
+            info.repayment_type = $('#repayment_type').val();
 
-            if(!isMobile(info.phone)){
-                $('#phone').css('border','solid 1px red');
+            if (!isMobile(info.phone)) {
+                $('#phone').css('border', 'solid 1px red');
                 alert('手机号填写错误，请仔细检查');
                 return;
             }
-            if(isNull(info.idcard)){
-                if(!isIdCard(info.idcard)){
-                    $('#phone').css('border','solid 1px red');
+            if (!isNull(info.idcard)) {
+                if (!isIdCard(info.idcard)) {
+                    $('#phone').css('border', 'solid 1px red');
                     alert('身份证号填写错误，请仔细检查');
                     return;
                 }
@@ -204,19 +294,19 @@
             console.log(info);
             console.log(jsonStr);
             $.ajax({
-                url:'http://192.168.1.133:8080/user/edit',
-                data:info,
-                dataType:'jsonp',
-                jsonp:'callback',
-                jsonCallback:'addCustomer',
-                success:function (data) {
-                    if(data.code){
-                        alert('添加成功！');
-                    }else{
+                url: 'http://192.168.1.133:8080/user/edit',
+                data: info,
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                jsonCallback: 'addCustomer',
+                success: function (data) {
+                    if (data.code) {
+                        alert('修改成功！');
+                    } else {
                         alert(data.errormsg);
                     }
                 },
-                error:function () {
+                error: function () {
                     alert('小融有点忙，请稍后再试！');
                 }
             })
@@ -224,14 +314,14 @@
     });
 
 
-//    点击图片查看大图
-    $('.img_list img').bind('click',function () {
+    //    点击图片查看大图
+    $('.img_list img').bind('click', function () {
         var img_src = $(this).attr('src');
-        $('.img_big img').attr('src',img_src);
-        $('.img_big').css('display','block');
+        $('.img_big img').attr('src', img_src);
+        $('.img_big').css('display', 'block');
     });
-    $('.img_big').bind('click',function () {
-        $('.img_big').css('display','none');
+    $('.img_big').bind('click', function () {
+        $('.img_big').css('display', 'none');
     })
 </script>
 </body>
