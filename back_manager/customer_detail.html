@@ -150,9 +150,29 @@
             <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
                 <div class="am-input-group am-input-group-sm">
                 <span class="am-input-group-label">
-                 用钱周期:
+                 用钱周期(天):
                  </span>
-                    <input id="use_cycle" class="am-form-field" type="date" readonly>
+                    <input id="use_cycle_day" class="am-form-field" type="number" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱周期(月):
+                 </span>
+                    <input id="use_cycle_month" class="am-form-field" type="number" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-4">
+                <div class="am-input-group am-input-group-sm">
+                <span class="am-input-group-label">
+                 用钱周期(年):
+                 </span>
+                    <input id="use_cycle_year" class="am-form-field" type="number" readonly>
                 </div>
             </div>
         </div>
@@ -241,7 +261,9 @@
                 $('#want_money').val(user.want_money);
                 $('#want_time').val(user.want_time);
                 $('#use_type').val(user.use_type);
-                $('#use_cycle').val(user.use_cycle);
+                $('#use_cycle_day').val(user.use_cycle_day);
+                $('#use_cycle_month').val(user.use_cycle_month);
+                $('#use_cycle_year').val(user.use_cycle_year);
                 $('#repayment_type').val(user.repayment_type);
                 $('#rank').val(user.rank);
 
@@ -271,7 +293,9 @@
             info.idcard = $('#idCard').val();
             info.want_money = $('#want_money').val();
             info.want_money = $('#want_money').val();
-            info.use_type = $('#use_type').val();
+            info.use_type_day = $('#use_type_day').val();
+            info.use_type_month = $('#use_type_month').val();
+            info.use_type_year = $('#use_type_year').val();
             info.use_cycle = $('#use_cycle').val();
             info.rank = $('#rank').val();
             info.repayment_type = $('#repayment_type').val();
