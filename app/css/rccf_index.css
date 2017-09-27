@@ -34,6 +34,9 @@
     width: 0.133333rem;
     margin-left: 0.666667rem;
 }
+.rccf_parent{
+    width: 100%;
+}
 .rccf_product{
     width: 6.0rem;
     height: 4.766667rem;
@@ -85,9 +88,7 @@
 }
 
 /*我要贷款*/
-.rccf_loan{
-    text-align: center;
-}
+
 .rccf_loan .rccf_loan_btn{
     height: 0.55rem;
     width: 3.066667rem;
@@ -102,7 +103,7 @@
 }
 .rccf_btn_primary{
     margin-top: 0.2rem;
-    background-color: blue;
+    background-color: #009cda;
 }
 .rccf_circle{
     margin-left:0.24rem ;

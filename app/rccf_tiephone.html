@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定手机号码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=0"/>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/jquery-weui.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/rccf_base.css">
+    <link rel="stylesheet" href="css/rccf_index.css">
+</head>
+<body>
+<div class="rccf_grey_body">
+    <div class="weui-cells">
+        <div class="weui-cell fz30">
+            <div id="back" class="weui-cell__hd">
+                <i class="fa fa-chevron-left"></i>
+                <span>返回</span>
+            </div>
+            <div class="weui-cell__bd rccf_text_center ">
+                绑定手机号&emsp;&emsp;
+            </div>
+            <div id="confirm" class="weui-cell__ft rccf_text_black">
+                确定
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <input id="phone" class="weui-input" type="tel" placeholder="请输入手机号">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/self_adaption.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script>
+    $('#back').bind('click',function () {
+        window.location.href = 'http://localhost:63342/rccf_back/app/rccf_mine.html';
+    })
+    $('#confirm').bind('click',function () {
+        var phone = $('#phone').val();
+        $.ajax({
+            url:'',
+            data:{},
+            success:function () {
+                $.confirm({
+                    title: '确定',
+                    text: '您确定绑定此手机号？',
+                    onOK: function () {
+                        window.location.href='http://localhost:63342/rccf_back/app/rccf_mine.html';
+                    },
+                    onCancel: function () {
+                    }
+                });
+            }
+        })
+    })
+</script>
+</body>
+</html>

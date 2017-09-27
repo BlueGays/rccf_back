@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的邀请</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=0"/>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/jquery-weui.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/rccf_base.css">
+    <link rel="stylesheet" href="css/rccf_index.css">
+</head>
+<body>
+<div class="rccf_grey_body">
+    <div class="weui-cells">
+        <div class="weui-cell fz30">
+            <div id="back" class="weui-cell__hd">
+                <i class="fa fa-chevron-left"></i>
+                <span>返回</span>
+            </div>
+            <div class="weui-cell__bd rccf_text_center ">
+                我的邀请&emsp;&emsp;
+            </div>
+            <div id="confirm" class="weui-cell__ft rccf_text_black">
+                邀请好友
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-cells">
+        <a class="weui-cell weui-cell_access" href="tel:18234778212">
+            <div class="weui-cell__bd">
+                <p>张三&emsp;<span>18234778212</span></p>
+            </div>
+        </a>
+        <a class="weui-cell weui-cell_access" href="tel:18234778212">
+            <div class="weui-cell__bd">
+                <p>张三&emsp;<span>18234778212</span></p>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="js/self_adaption.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script>
+    $('#back').bind('click', function () {
+        window.location.href = 'http://localhost:63342/rccf_back/app/rccf_mine.html';
+    })
+    $('#confirm').bind('click', function () {
+        $.ajax({
+            url: '',
+            data: {},
+            success: function () {
+                window.location.href = 'http://localhost:63342/rccf_back/app/rccf_invitation.html';
+            }
+        })
+    })
+</script>
+</body>
+</html>
