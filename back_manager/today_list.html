@@ -7,14 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/amazeui.page.css"/>
-    <style type="text/css">
-        html, body {
-            overflow: auto;
-        }
-        .my-bordered{
-            border: 1px solid #ddd;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
 <div class="am-cf am-padding am-padding-bottom-0">
@@ -77,94 +70,94 @@
 <script src="assets/js/table2excel/FileSaver.js"></script>
 <script src="assets/js/table2excel/tableExport.js"></script>
 <script>
-    $(document).ready(function () {
-        var url = "http://192.168.1.183:8080/employee/daycount";
-        $.ajax({
-            type: 'get',
-            url: url,
-            data: {"time": "2017-09-13"},
-            dataType: 'jsonp',
-            jsonp: 'callback',
-            jsonpCallback: '_jsonp',
-            processData: true,
-            success: function (result) {
-                var info = JSON.parse(result);
-                var banjie = info.banjie;
-                var shouli = info.shouli;
-                var banjie_str = "";
-                var shouli_str = "";
-                console.log(banjie[0][0]);
-                for (var i = 0; i < banjie.length; i++) {
-                    if (i === 0) {
-                        banjie_str += '<tr>\n' +
-                            '                    <td>' + getdata(banjie[i][0]) + '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][1])+ '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][2]) + '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][3]) + '</td>\n' +
-                            '                    <td>' + getType(banjie[i][4]) + '</td>\n' +
-                            '                    <td>' + getState(banjie[i][5]) + '</td>\n' +
-                            '                    <td>' + banjie[i][6] + '</td>\n' +
-                            '                    <td class="am-text-middle" rowspan="' + banjie.length + '">'+get_sum(banjie)+'</td>\n' +
-                            '                </tr>';
-                    } else {
-                        banjie_str += '<tr>\n' +
-                            '                    <td>' + getdata(banjie[i][0]) + '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][1])+ '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][2]) + '</td>\n' +
-                            '                    <td>' + getdata(banjie[i][3]) + '</td>\n' +
-                            '                    <td>' + getType(banjie[i][4]) + '</td>\n' +
-                            '                    <td>' + getState(banjie[i][5]) + '</td>\n' +
-                            '                    <td>' + banjie[i][6] + '</td>\n' +
-                            '                </tr>';
-                    }
-
-                }
-                for (var i = 0; i < shouli.length; i++) {
-                    if (i === 0) {
-                        shouli_str += '<tr>\n' +
-                            '                    <td>' + getdata(shouli[i][0]) + '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][1])+ '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][2]) + '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][3]) + '</td>\n' +
-                            '                    <td>' + getType(shouli[i][4]) + '</td>\n' +
-                            '                    <td>' + getState(shouli[i][5]) + '</td>\n' +
-                            '                    <td>' + shouli[i][6] + '</td>\n' +
-                            '                    <td class="am-text-middle" rowspan="' + shouli.length + '">'+get_sum(shouli)+'</td>\n' +
-                            '                </tr>';
-                    } else {
-                        shouli_str += '<tr>\n' +
-                            '                    <td>' + getdata(shouli[i][0]) + '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][1])+ '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][2]) + '</td>\n' +
-                            '                    <td>' + getdata(shouli[i][3]) + '</td>\n' +
-                            '                    <td>' + getType(shouli[i][4]) + '</td>\n' +
-                            '                    <td>' + getState(shouli[i][5]) + '</td>\n' +
-                            '                    <td>' + shouli[i][6] + '</td>\n' +
-                            '                </tr>';
-                    }
-
-                }
-                $("#content").html(banjie_str);
-                $("#content1").html(shouli_str);
-            },
-            error: function () {
-                console.log("aaa");
-            }
-        });
-        var _jsonp = function (data) {
-            return data;
-        };
-    });
-    //导出excel实现
-    var $exportLink = document.getElementById('export');
-    $exportLink.addEventListener('click',
-        function (e) {
-            e.preventDefault();
-            if (e.target.nodeName === "A") {
-                tableExport('today_list', '今日受理办结', e.target.getAttribute('data-type'))
-            }
-        },
-        false);
+//    $(document).ready(function () {
+//        var url = "http://192.168.1.183:8080/employee/daycount";
+//        $.ajax({
+//            type: 'get',
+//            url: url,
+//            data: {"time": "2017-09-13"},
+//            dataType: 'jsonp',
+//            jsonp: 'callback',
+//            jsonpCallback: '_jsonp',
+//            processData: true,
+//            success: function (result) {
+//                var info = JSON.parse(result);
+//                var banjie = info.banjie;
+//                var shouli = info.shouli;
+//                var banjie_str = "";
+//                var shouli_str = "";
+//                console.log(banjie[0][0]);
+//                for (var i = 0; i < banjie.length; i++) {
+//                    if (i === 0) {
+//                        banjie_str += '<tr>\n' +
+//                            '                    <td>' + getdata(banjie[i][0]) + '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][1])+ '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][2]) + '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][3]) + '</td>\n' +
+//                            '                    <td>' + getType(banjie[i][4]) + '</td>\n' +
+//                            '                    <td>' + getState(banjie[i][5]) + '</td>\n' +
+//                            '                    <td>' + banjie[i][6] + '</td>\n' +
+//                            '                    <td class="am-text-middle" rowspan="' + banjie.length + '">'+get_sum(banjie)+'</td>\n' +
+//                            '                </tr>';
+//                    } else {
+//                        banjie_str += '<tr>\n' +
+//                            '                    <td>' + getdata(banjie[i][0]) + '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][1])+ '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][2]) + '</td>\n' +
+//                            '                    <td>' + getdata(banjie[i][3]) + '</td>\n' +
+//                            '                    <td>' + getType(banjie[i][4]) + '</td>\n' +
+//                            '                    <td>' + getState(banjie[i][5]) + '</td>\n' +
+//                            '                    <td>' + banjie[i][6] + '</td>\n' +
+//                            '                </tr>';
+//                    }
+//
+//                }
+//                for (var i = 0; i < shouli.length; i++) {
+//                    if (i === 0) {
+//                        shouli_str += '<tr>\n' +
+//                            '                    <td>' + getdata(shouli[i][0]) + '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][1])+ '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][2]) + '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][3]) + '</td>\n' +
+//                            '                    <td>' + getType(shouli[i][4]) + '</td>\n' +
+//                            '                    <td>' + getState(shouli[i][5]) + '</td>\n' +
+//                            '                    <td>' + shouli[i][6] + '</td>\n' +
+//                            '                    <td class="am-text-middle" rowspan="' + shouli.length + '">'+get_sum(shouli)+'</td>\n' +
+//                            '                </tr>';
+//                    } else {
+//                        shouli_str += '<tr>\n' +
+//                            '                    <td>' + getdata(shouli[i][0]) + '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][1])+ '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][2]) + '</td>\n' +
+//                            '                    <td>' + getdata(shouli[i][3]) + '</td>\n' +
+//                            '                    <td>' + getType(shouli[i][4]) + '</td>\n' +
+//                            '                    <td>' + getState(shouli[i][5]) + '</td>\n' +
+//                            '                    <td>' + shouli[i][6] + '</td>\n' +
+//                            '                </tr>';
+//                    }
+//
+//                }
+//                $("#content").html(banjie_str);
+//                $("#content1").html(shouli_str);
+//            },
+//            error: function () {
+//                console.log("aaa");
+//            }
+//        });
+//        var _jsonp = function (data) {
+//            return data;
+//        };
+//    });
+//    //导出excel实现
+//    var $exportLink = document.getElementById('export');
+//    $exportLink.addEventListener('click',
+//        function (e) {
+//            e.preventDefault();
+//            if (e.target.nodeName === "A") {
+//                tableExport('today_list', '今日受理办结', e.target.getAttribute('data-type'))
+//            }
+//        },
+//        false);
 </script>
 </body>
 </html>
