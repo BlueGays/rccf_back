@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/amazeui.page.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+</head>
+<body>
+<div class="admin-content-body">
+    <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">员工列表</strong> /
+            <small>List</small>
+        </div>
+
+    </div>
+    <hr>
+    <div class="am-g am-margin am-padding-right-xl am-text-right">
+            <a data-type="xls" href="javascript:;" class="am-btn am-btn-secondary ">显示全部</a>
+            <a data-type="xls" href="javascript:;" class="am-btn am-btn-secondary ">分页显示</a>
+            <a data-type="csv" href="javascript:;" class="am-btn am-btn-secondary">导出表格</a>
+    </div>
+    <div class="am-g am-margin">
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <select>
+                    <option>选择部门</option>
+                    <option>金融一部</option>
+                    <option>金融二部</option>
+                    <option>金融三部</option>
+                    <option>渠道部</option>
+                </select>
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <input class="w_8" type="text" placeholder="职位">
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <input class="w_8" type="text" placeholder="员工姓名">
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <input class="w_8" type="text" placeholder="副总监">
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <input class="w_8" type="text" placeholder="总监">
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2">
+            <div class="am-input-group am-input-group-sm">
+                <div class="am-input-group-btn am-margin-top">
+                    <button class="am-btn am-btn-primary w_8" type="button">搜索</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="am-g">
+        <div class="am-u-sm-12">
+            <form class="am-form am-scrollable-horizontal">
+
+
+                <table id="employee_table"
+                       class="am-form-horizontal am-text-nowrap am-table-centered am-table am-table-striped am-table-hover table-main">
+                    <thead>
+                    <tr>
+                        <th>员工编号</th>
+                        <th>员工姓名</th>
+                        <th>性别</th>
+                        <th>联系方式</th>
+                        <th>所属部门</th>
+                        <th>职务</th>
+                        <th>副总监</th>
+                        <th>总监</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="content">
+                    <tr>
+                        <td>10001</td>
+                        <td>张三</td>
+                        <td>男</td>
+                        <td>13878982222</td>
+                        <td>金融一部</td>
+                        <td>财务顾问</td>
+                        <td>李四</td>
+                        <td>王五</td>
+                        <td>
+                            <a class="am-btn am-btn-default am-btn-xs am-text-secondary"><span
+                                    class="am-icon-pencil-square-o"></span> 详情
+                            </a>
+                            <a href="employee_detail.html" class="am-btn am-btn-default am-btn-xs"><span
+                                    class="am-icon-copy"></span> 编辑
+                            </a>
+                            <a class="am-btn am-btn-default am-btn-xs am-text-danger">
+                                <span class="am-icon-trash-o"></span> 删除
+                            </a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="page" class="am-align-right"></div>
+<div id="jump" class="am-u-lg-3 am-margin-top am-align-right">
+    <div class="am-input-group am-g">
+        <label class="am-input-group-label">
+            跳转到第
+        </label>
+        <input id="curr" class="am-form-field" min="1" value="1" type="number">
+        <label class="am-input-group-label">
+            页
+        </label>
+        <span class="am-input-group-btn">
+        <button id="set" class="am-btn am-btn-success am-btn-xs">go</button>
+    </span>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.page.js"></script>
+<script src="assets/js/table2excel/Blob.js"></script>
+<script src="assets/js/table2excel/FileSaver.js"></script>
+<script src="assets/js/table2excel/tableExport.js"></script>
+<script src="assets/js/employee/employee_list.js"></script>
+</body>
+</html>

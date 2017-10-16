@@ -138,4 +138,4 @@ $("#display_all").bind("click", function () {
     $("#content").html(all_Data());
     $("#jump").hide();
     $("#page").hide();
-})
+});

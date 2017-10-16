@@ -90,15 +90,18 @@
 /*我要贷款*/
 
 .rccf_loan .rccf_loan_btn{
-    height: 0.55rem;
+    height: 0.8rem;
     width: 3.066667rem;
 }
 .rccf_border_radius{
     border-radius: 0.566667rem;
 }
 .rccf_loan_btn{
+    font-size: 0.4rem;
     color: #FFFFFF;
     background-color: #0c7cb5;
+    box-shadow: none;
+    border: none;
 
 }
 .rccf_btn_primary{

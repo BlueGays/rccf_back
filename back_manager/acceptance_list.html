@@ -23,19 +23,19 @@
     </div>
     <!--筛选条件-->
     <div class="am-g">
-        <div class="am-u-sm-12 am-u-md-3 am-margin-bottom">
+        <div class="am-u-sm-12 am-u-md-2 am-margin-bottom">
             <div class="am-input-group am-input-group-sm">
                 <label>开始日期:</label>
                 <input id="start" class="am-form-field" type="date">
             </div>
         </div>
-        <div class="am-u-sm-12 am-u-md-3 am-margin-bottom">
+        <div class="am-u-sm-12 am-u-md-2 am-margin-bottom">
             <div class="am-input-group am-input-group-sm">
                 <label>结束日期:</label>
                 <input id="end" class="am-form-field" type="date">
             </div>
         </div>
-        <div class="am-u-sm-12 am-u-md-3 am-margin-bottom">
+        <div class="am-u-sm-12 am-u-md-2 am-margin-bottom">
             <div class="am-input-group am-input-group-sm">
                 <label>&emsp;</label>
                 <select id="state" style="display:block;height: 2.2em;">
@@ -47,7 +47,18 @@
                 </select>
             </div>
         </div>
-        <div class="am-u-sm-12 am-u-md-3 am-margin-bottom">
+        <div class="am-u-sm-12 am-u-md-2 am-margin-bottom">
+            <div class="am-input-group am-input-group-sm">
+                <label>&emsp;</label>
+                <select id="loan_style" style="display:block;height: 2.2em;">
+                    <option value="0">选择业务类型</option>
+                    <option value="1">信贷</option>
+                    <option value="2">质押</option>
+                    <option value="3">抵押</option>
+                </select>
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-2 am-margin-bottom">
             <div class="am-input-group am-input-group-sm">
                 <label>&emsp;</label>
                 <button id="search" class="am-btn am-btn-primary field_btn" type="button">搜索</button>
@@ -56,7 +67,7 @@
     </div>
     <!--表格-->
     <div class="am-g ">
-        <div class="am-u-sm-12 am-scrollable-vertical am-scrollable-horizontal">
+        <div class="am-u-sm-12  am-scrollable-horizontal">
             <form class="am-form ">
                 <table id="accept_list"
                        class="am-form-horizontal am-text-nowrap am-table-centered am-table-bordered am-table am-table-striped am-table-hover table-main">
@@ -87,116 +98,6 @@
                     </thead>
                     <tbody id="content">
                     <tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
-                        <td class="am-text-truncate" style="display:inline-block;width: 10em;">李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼</td>
-                    </tr><tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
-                        <td class="am-text-truncate" style="display:inline-block;width: 10em;">李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼</td>
-                    </tr><tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
-                        <td class="am-text-truncate" style="display:inline-block;width: 10em;">李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼</td>
-                    </tr><tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
-                        <td class="am-text-truncate" style="display:inline-block;width: 10em;">李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼</td>
-                    </tr><tr>
-                        <td>3.12ZY—GS</td>
-                        <td>20070831-001</td>
-                        <td>李先生</td>
-                        <td>13878982222</td>
-                        <td>质押</td>
-                        <td>公司</td>
-                        <td>工薪贷</td>
-                        <td>300万元</td>
-                        <td>1.8%</td>
-                        <td>13800元</td>
-                        <td>2017/8/30</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>甄小姐</td>
-                        <td>办结</td>
-                        <td>210</td>
-                        <td>是</td>
-                        <td>9.18受理</td>
-                        <td>2017/9/18</td>
-                        <td>李曼</td>
-                        <td class="am-text-truncate" style="display:inline-block;width: 10em;">李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼李曼</td>
-                    </tr><tr>
                         <td>3.12ZY—GS</td>
                         <td>20070831-001</td>
                         <td>李先生</td>
@@ -263,7 +164,7 @@
             obj.state = state;
         }
         $.ajax({
-            url: 'http://192.168.1.37:8080/accept/list',
+            url: 'http://weixin.rccfkg.com/accept/list',
             data: obj,
             dataType: 'jsonp',
             jsonp: 'callback',

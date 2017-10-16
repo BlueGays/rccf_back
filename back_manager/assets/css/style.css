@@ -47,6 +47,9 @@ html, body {
 .upload_img{
     border: dashed 1px #888;
 }
+.am-input-group-sm label{
+    color: #e1e1e1;
+}
 table{
     background-color: #273f54;
 }

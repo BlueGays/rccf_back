@@ -123,7 +123,7 @@ function reinitIframe(iframeId, minHeight) {
 
         var height = Math.max(bHeight, dHeight);
         if (height < minHeight) height = minHeight;
-        iframe.style.height = height + "px";
+        iframe.style.height = height +20 + "px";
     } catch (ex) { }
 }
 function startInit(iframeId, minHeight) {
