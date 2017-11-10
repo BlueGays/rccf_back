@@ -31,8 +31,8 @@
 .rccf_vertical_line {
     color:#ff9933 ;
     background-color: #ff9933;
-    width: 0.133333rem;
-    margin-left: 0.666667rem;
+    width: 0.1rem;
+    margin-left: 0.066667rem;
 }
 .rccf_parent{
     width: 100%;
@@ -74,6 +74,7 @@
 /*底部导航*/
 .rccf_tabbar{
     position: fixed;
+    background-color: #fff;
 }
 .rccf_tabbar_icon {
     display: inline-block;
@@ -81,7 +82,7 @@
     height: 0.5rem
 }
 .rccf_tabbar_text{
-    color: #ff9933;
+    color: #efbf3e;
 }
 .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label{
     color: #ff9933;

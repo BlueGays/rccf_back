@@ -404,7 +404,7 @@ button.weui-btn_plain-default, button.weui-btn_plain-primary, input.weui-btn_pla
 }
 
 .weui-cells {
-    margin-top: 1.17647059em;
+    margin-top: 0.2em;
     background-color: #fff;
     line-height: 1.47058824;
     font-size: 17px;
@@ -462,7 +462,7 @@ button.weui-btn_plain-default, button.weui-btn_plain-primary, input.weui-btn_pla
 }
 
 .weui-cell {
-    padding: 10px 15px;
+    padding: 5px 15px;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1395,7 +1395,7 @@ button.weui-vcode-btn {
 
 .weui-tabbar__label {
     text-align: center;
-    color: #999;
+    color: #333;
     font-size: 10px;
     line-height: 1.8
 }
