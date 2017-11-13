@@ -63,8 +63,8 @@
     .weui-cells {
       font-size: 17px;
       background-color: #FFFFFF;
-      margin-bottom: 2em;
-      padding: 0.6em 1em 0.5em;
+      margin-bottom: 0.4rem;
+      padding: 0.6em 1em 0.5em 0.2rem;
     }
 
     .weui-cell {
@@ -81,14 +81,18 @@
       width: 33.3333333% !important;
       text-align: center;
     }
-
+    .weui-cell__hd,
+    .weui-cell__bd{
+      border-right: 1px solid #f5f5f5;
+    }
     p:first-child {
       color: #f8b47e;
-      font-size: 20px;
+      font-size: 17px;
     }
 
     p:last-child {
       color: #999999;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -125,7 +129,7 @@
 
       <div class="weui-cell__hd">
         <p>￥1-50</p>
-        <p>金额（万元）</p>
+        <p>金额(万元)</p>
       </div>
       <div class="weui-cell__bd">
         <p>0.90%-2.40%</p>
@@ -147,7 +151,7 @@
 
       <div class="weui-cell__hd">
         <p>￥1-50</p>
-        <p>金额（万元）</p>
+        <p>金额(万元)</p>
       </div>
       <div class="weui-cell__bd">
         <p>0.90%-2.40%</p>
@@ -169,7 +173,7 @@
 
       <div class="weui-cell__hd">
         <p>￥1-50</p>
-        <p>金额（万元）</p>
+        <p>金额(万元)</p>
       </div>
       <div class="weui-cell__bd">
         <p>0.90%-2.40%</p>
@@ -190,7 +194,7 @@
     <div class="weui-cell">
       <div class="weui-cell__hd">
         <p>￥1-50</p>
-        <p>金额（万元）</p>
+        <p>金额(万元)</p>
       </div>
       <div class="weui-cell__bd">
         <p>0.90%-2.40%</p>
@@ -211,7 +215,7 @@
     <div class="weui-cell">
       <div class="weui-cell__hd">
         <p>￥5-500</p>
-        <p>金额（万元）</p>
+        <p>金额(万元)</p>
       </div>
       <div class="weui-cell__bd">
         <p>0.90%-2.40%</p>
@@ -225,5 +229,8 @@
   </div>
 </div>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/self_adaption.js"></script>
 </body>
 </html>

@@ -10,29 +10,30 @@
   <link rel="stylesheet" href="css/weui.min.css"/>
   <link rel="stylesheet" href="css/jquery-weui.min.css"/>
   <link rel="stylesheet" href="css/font-awesome.css"/>
-  <link rel="stylesheet" href="css/swiper.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.0.1/css/swiper.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/rccf_base.css">
   <link rel="stylesheet" href="css/rccf_index.css">
   <style>
     @keyframes speaker {
-      0%{
+      0% {
         color: #d84444;
       }
-      25%{
+      25% {
         color: #e2774d;
       }
-      50%{
+      50% {
         color: #666666;
       }
-      100%{
+      100% {
         color: #f5f5f5;
       }
     }
-    .swiper-slide{
+
+    .swiper-slide {
       width: 10rem !important;
     }
 
-    .speak{
+    .speak {
       animation-name: speaker;
       animation-duration: 1s;
       animation-timing-function: ease;
@@ -48,6 +49,9 @@
 <!--</header>-->
 
 <div class="rccf_body fade out">
+  <marquee behavior="scroll" direction="up" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="3" width="100" onmouseover="this.stop();" onmouseout="this.start();">
+    <span>滚动内容</span>
+  </marquee>
   <!-- 首页轮播图 -->
   <div class="swiper-container">
     <!-- Additional required wrapper -->
@@ -95,7 +99,8 @@
         <p class="rccf_vertical_line fz32">|</p>
       </div>
       <div class="weui-cell__bd fz36">
-        <p class="rccf_margin_left_sm">主营产品 <i  class="fa fa-volume-up speak"></i> <span style="color: #666666">用户 130****1234 申请<em style="color: #ff9933;">薪水贷</em></span></p>
+        <p class="rccf_margin_left_sm">主营产品 <i class="fa fa-volume-up speak"></i> <span style="color: #666666">用户 130****1234 申请<em
+                style="color: #ff9933;">薪水贷</em></span></p>
       </div>
     </div>
     <div class="swiper-container_1 rccf_margin_top_sm">
@@ -113,7 +118,8 @@
               <div class="rccf_product_info fz20">
                 <span>有房人士均可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #e2774d;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #e2774d;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -130,7 +136,8 @@
               <div class="rccf_product_info fz20">
                 <span>购买人寿保险人士均可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #99cc67;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #99cc67;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -147,7 +154,8 @@
               <div class="rccf_product_info fz20">
                 <span>有稳定收入人士可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #6794cd;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #6794cd;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -164,7 +172,8 @@
               <div class="rccf_product_info fz20">
                 <span>有正常生意人士可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #cc6695;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #cc6695;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -181,7 +190,8 @@
               <div class="rccf_product_info fz20">
                 <span>有正常生意人士可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #c21920;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #c21920;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -198,7 +208,8 @@
               <div class="rccf_product_info fz20">
                 <span>公务员、事业单位或世界500强工作人员可贷</span>
               </div>
-              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #aca55d;">立即申请</button>
+              <button data-html="rccf_dy_loan" class="rccf_product_btn  fz26" style="background-color: #aca55d;">立即申请
+              </button>
             </div>
           </div>
         </div>
@@ -250,7 +261,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-weui.min.js"></script>
-<script src="js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.0.1/js/swiper.min.js"></script>
 <script src="js/self_adaption.js"></script>
 <script src="js/nprogress.js"></script>
 <script>
@@ -270,34 +281,41 @@
   var mySwiper = new Swiper('.swiper-container', {
     effect: "slide",
     speed: 1000,
-    autoplay: 2000,
-    autoplayDisableOnInteraction: false,
     loop: true,
     spaceBetween: 0,
+    autoplay: {
+      delay: 2000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true
+    },
     // 如果需要分页器
-    pagination : '#swiper-pagination1',
-    paginationClickable: true
+    pagination: {
+      el: 'swiper-pagination1',
+      clickable: true,
+    }
   });
 
   //  贷款信息轮播
   var swiper = new Swiper('.swiper-container_1', {
-    pagination: '.swiper-pagination',
     loop: false,
     effect: 'slide',
-    autoplay: 2000,
-    autoplayDisableOnInteraction: false,
+    autoplay: {
+      delay: 2000,
+      stopOnLastSlide: false,
+      disableOnInteraction: true
+    },
     grabCursor: true,
     slidesPerView: 1,
-    spaceBetween:5
+    spaceBetween: 5
   });
 
   $('[data-html]').click(function () {
     var name = $(this).data('html');
 
-    window.location.href = 'http://localhost:63342/rccf_back/app/'+name+'.html'
+    window.location.href = 'http://localhost:63342/rccf_back/app/' + name + '.html'
   })
 
-//  setInterval()
+  //  setInterval()
 </script>
 </body>
 </html>
