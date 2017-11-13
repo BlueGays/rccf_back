@@ -14,9 +14,31 @@
   <link rel="stylesheet" href="css/rccf_base.css">
   <link rel="stylesheet" href="css/rccf_index.css">
   <style>
+    @keyframes speaker {
+      0%{
+        color: #d84444;
+      }
+      25%{
+        color: #e2774d;
+      }
+      50%{
+        color: #666666;
+      }
+      100%{
+        color: #f5f5f5;
+      }
+    }
     .swiper-slide{
       width: 10rem !important;
     }
+
+    .speak{
+      animation-name: speaker;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+    }
+
   </style>
 </head>
 <body>
@@ -36,6 +58,8 @@
       <div class="swiper-slide"><img src="image/headimg/3.jpg"/></div>
       <div class="swiper-slide"><img src="image/headimg/4.jpg"/></div>
     </div>
+    <!-- 如果需要分页器 -->
+    <div id="swiper-pagination1" class="swiper-pagination"></div>
   </div>
   <!--导航按钮-->
   <div class="weui-flex rccf_nav_containar">
@@ -71,7 +95,7 @@
         <p class="rccf_vertical_line fz32">|</p>
       </div>
       <div class="weui-cell__bd fz36">
-        <p class="rccf_margin_left_sm">主营产品 <i class="fa fa-volume-up" style="color: #d84444;"></i> <span style="color: #666666">用户 130****1234 申请</span><span style="color: #ff9933;">薪水贷</span></p>
+        <p class="rccf_margin_left_sm">主营产品 <i  class="fa fa-volume-up speak"></i> <span style="color: #666666">用户 130****1234 申请<em style="color: #ff9933;">薪水贷</em></span></p>
       </div>
     </div>
     <div class="swiper-container_1 rccf_margin_top_sm">
@@ -249,8 +273,12 @@
     autoplay: 2000,
     autoplayDisableOnInteraction: false,
     loop: true,
-    spaceBetween: 0
+    spaceBetween: 0,
+    // 如果需要分页器
+    pagination : '#swiper-pagination1',
+    paginationClickable: true
   });
+
   //  贷款信息轮播
   var swiper = new Swiper('.swiper-container_1', {
     pagination: '.swiper-pagination',
@@ -269,6 +297,7 @@
     window.location.href = 'http://localhost:63342/rccf_back/app/'+name+'.html'
   })
 
+//  setInterval()
 </script>
 </body>
 </html>
